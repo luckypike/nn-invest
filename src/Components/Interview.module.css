@@ -51,7 +51,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1.5rem;
-    /* grid-row-gap: 2rem; */
+    grid-row-gap: 2rem;
   }
 
   .with {
@@ -95,9 +95,5 @@
 
   .right {
     grid-column: 3;
-  }
-
-  .text {
-    margin-bottom: 2rem;
   }
 }

@@ -39,6 +39,17 @@ export default function Interview () {
           <p className={styles.a}>
             Это участок площадью 72,3 га в районе Дзержинска — площадка АО «ДПО „Пластик“». Мы выбрали эту площадку, потому что видим потенциал развития территории за счет перспективного промышленного парка «Дзержинск-Восточный» и находящегося поблизости таможенного поста, что дает возможность использовать режим свободной таможенной зоны. Сейчас на площадке функционируют производства: завод «Пластик» и компания «Хома». В дальнейшем они станут резидентами ОЭЗ. Свободные площади, которые мы будем предлагать инвесторам, составляют 28 га. Некоторых будущих резидентов ОЭЗ мы подыскали, это химические и фармацевтические производства — традиционные для Дзержинска. На данный момент у нас законтрактовано порядка 6 млрд руб.
           </p>
+
+          {height === 'auto' &&
+            <AnimateHeight height={height} duration={700}>
+              <p className={styles.q}>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+              <p className={styles.a}>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+              </p>
+            </AnimateHeight>
+          }
         </div>
 
         <div className={styles.text}>
@@ -57,28 +68,17 @@ export default function Interview () {
           <p className={styles.a}>
             Заявка сейчас проходит правовую экспертизу в Министерстве экономического развития РФ, планируется, что до конца декабря проект постановления о создании ОЭЗ будет вывешен на сайте правительства. Мы рассчитываем, что к концу марта мы получим постановление, подписанное председателем правительства РФ Дмитрием Медведевым.
           </p>
-        </div>
 
-        <div className={styles.left}>
-          <AnimateHeight height={height} duration={700}>
-            <div className={styles.q}>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </div>
-            <div className={styles.a}>
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            </div>
-          </AnimateHeight>
-        </div>
-
-        <div className={styles.right}>
-          <AnimateHeight height={height} duration={700}>
-            <div className={styles.q}>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate !
-            </div>
-            <div className={styles.a}>
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit!
-            </div>
-          </AnimateHeight>
+          {height === 'auto' &&
+            <AnimateHeight height={height} duration={700}>
+              <p className={styles.q}>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate !
+              </p>
+              <p className={styles.a}>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit!
+              </p>
+            </AnimateHeight>
+          }
         </div>
 
         <div className={styles.full} onClick={handleScroll}>
