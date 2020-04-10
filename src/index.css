@@ -14,7 +14,17 @@ body {
   line-height: 1.5rem;
 }
 
-@custom-media --s (min-width: 720px);
-@custom-media --m (min-width: 960px);
-@custom-media --l (min-width: 1280px);
-@custom-media --xl (min-width: 1600px);
+@media (min-width: 720px) {
+  body {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
+
+p {
+  margin: 0 0 0.5rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
