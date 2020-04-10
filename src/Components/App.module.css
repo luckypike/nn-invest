@@ -1,13 +1,65 @@
 .root {
+  padding: 1rem 1rem;
+}
 
+.intro {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.left {
+  margin-bottom: 1rem;
+}
+
+.video {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.video::before {
+  content: '';
+  background-color: #777;
+  display: block;
+  padding-top: calc(9 / 16 * 100%);
 }
 
 @media (min-width: 720px) {
+  .root {
+    padding: 2rem 2rem;
+  }
 
+  .intro {
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 960px) {
   .root {
-    padding: 0 3.75rem;
+    padding: 3rem 3.75rem;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .left {
+    margin-bottom: 0;
+    grid-column: 2;
+  }
+
+  .right {
+    grid-column: 3;
+  }
+
+  .youtube {
+    margin-bottom: 3rem;
   }
 }

@@ -1,11 +1,13 @@
 .header {
   position: relative;
+  background: url('./Images/back.jpg') no-repeat center;
+  background-color: #666;
+  background-size: cover;
 }
 
 .header::before {
   content: '';
   display: block;
-  background-color: #666;
   padding-top: calc(5 / 4 * 100%);
 }
 
