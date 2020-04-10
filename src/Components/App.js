@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Header from './Header'
+import Interview from './Interview'
 
 import styles from './App.module.css'
 
@@ -36,6 +37,10 @@ export default function App () {
           <div className={styles.right}>
             Корпорация развития Нижегородской области является связующим звеном между бизнесом и властью. Здесь знают о возможностях региона, слышат потребности предпринимателей и готовы объединить стороны для реализации общей цели – экономического роста и развития.
           </div>
+        </div>
+
+        <div className={styles.interview}>
+          <Interview />
         </div>
       </div>
     </div>
