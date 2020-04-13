@@ -19,7 +19,8 @@
   margin-bottom: 2rem;
 }
 
-.sites {
+.sites,
+.structure {
   border-bottom: 1px solid #e5e5e6;
   margin-bottom: 0.75rem;
 }
@@ -41,7 +42,7 @@
 
 @media (min-width: 960px) {
   .root {
-    padding: 3rem 0;
+    padding: 3rem 3.75rem;
     max-width: 90rem;
     margin: 0 auto;
   }
@@ -68,9 +69,5 @@
 
   .interview {
     margin-bottom: 4.5rem;
-  }
-
-  .structure {
-    border-bottom: 1px solid #e5e5e6;
   }
 }

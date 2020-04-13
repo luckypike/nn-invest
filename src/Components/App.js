@@ -6,6 +6,7 @@ import Youtube from './Index/Youtube'
 import Interview from './Index/Interview'
 import Sites from './Index/Sites'
 import Structure from './Index/Structure'
+import Position from './Index/Position'
 
 import styles from './App.module.css'
 
@@ -54,6 +55,10 @@ export default function App () {
 
           <div className={styles.structure}>
             <Structure />
+          </div>
+
+          <div className={styles.position}>
+            <Position />
           </div>
         </div>
       </div>
