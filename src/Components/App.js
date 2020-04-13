@@ -22,7 +22,9 @@ export default function App () {
         </div>
 
         <div className={styles.youtube}>
-          <div className={styles.video} />
+          <div className={styles.video}>
+            <iframe src="http://www.youtube.com/embed/gWvmd62bdHE" frameBorder="0" allowFullScreen={true} />
+          </div>
 
           <div className={styles.description}>
             Корпорация развития Нижегородской области
