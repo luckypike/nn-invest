@@ -7,6 +7,7 @@ import Interview from './Index/Interview'
 import Sites from './Index/Sites'
 import Structure from './Index/Structure'
 import Position from './Index/Position'
+import Production from './Index/Production'
 
 import styles from './App.module.css'
 
@@ -59,6 +60,10 @@ export default function App () {
 
           <div className={styles.position}>
             <Position />
+          </div>
+
+          <div className={styles.production}>
+            <Production />
           </div>
         </div>
       </div>

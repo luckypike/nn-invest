@@ -4,7 +4,6 @@
 
 .title {
   font-weight: bold;
-  max-width: 22.5rem;
 }
 
 .numbers {
@@ -22,10 +21,6 @@
   margin-bottom: 2rem;
 }
 
-.text {
-  max-width: 40.5rem;
-}
-
 @media (min-width: 960px) {
   .root {
     display: grid;
@@ -41,11 +36,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
-    border-bottom: 1px solid #e5e5e6;
     margin-bottom: 0.75rem;
   }
 
-  .text {
-    margin-bottom: 3rem;
+  .group:not(:last-child) {
+    border-bottom: 1px solid #e5e5e6;
   }
 }

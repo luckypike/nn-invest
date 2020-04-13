@@ -20,7 +20,9 @@
 }
 
 .sites,
-.structure {
+.structure,
+.position,
+.production {
   border-bottom: 1px solid #e5e5e6;
   margin-bottom: 0.75rem;
 }
