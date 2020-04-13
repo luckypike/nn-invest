@@ -41,6 +41,11 @@ iframe {
   margin-bottom: 2rem;
 }
 
+.sites {
+  border-bottom: 1px solid #e5e5e6;
+  margin-bottom: 0.75rem;
+}
+
 @media (min-width: 720px) {
   .root {
     padding: 2rem 2rem;
@@ -83,5 +88,9 @@ iframe {
 
   .interview {
     margin-bottom: 4.5rem;
+  }
+
+  .structure {
+    border-bottom: 1px solid #e5e5e6;
   }
 }

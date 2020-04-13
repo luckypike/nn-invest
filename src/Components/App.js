@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import Header from './Header'
 import Interview from './Interview'
+import Sites from './Index/Sites'
+import Structure from './Index/Structure'
 
 import styles from './App.module.css'
 
@@ -45,6 +47,14 @@ export default function App () {
 
           <div className={styles.interview}>
             <Interview />
+          </div>
+
+          <div className={styles.sites}>
+            <Sites />
+          </div>
+
+          <div className={styles.structure}>
+            <Structure />
           </div>
         </div>
       </div>
