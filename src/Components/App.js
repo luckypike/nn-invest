@@ -2,7 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import Header from './Header'
-import Interview from './Interview'
+import Youtube from './Index/Youtube'
+import Interview from './Index/Interview'
 import Sites from './Index/Sites'
 import Structure from './Index/Structure'
 
@@ -26,9 +27,7 @@ export default function App () {
           </div>
 
           <div className={styles.youtube}>
-            <div className={styles.video}>
-              <iframe src="http://www.youtube.com/embed/gWvmd62bdHE" frameBorder="0" allowFullScreen={true} />
-            </div>
+            <Youtube />
 
             <div className={styles.description}>
               Корпорация развития Нижегородской области
