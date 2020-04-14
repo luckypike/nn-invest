@@ -31,6 +31,12 @@
   composes: small from '../Fonts.module.css';
 }
 
+.news_item {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
 .news_item:not(:last-child) {
   margin-bottom: 1.5rem;
 }

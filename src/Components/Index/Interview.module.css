@@ -42,9 +42,13 @@
 .full {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
 }
 
 .more {
+  text-decoration: none;
+  color: #000;
   text-transform: uppercase;
   composes: h3 from '../Fonts.module.css';
 }

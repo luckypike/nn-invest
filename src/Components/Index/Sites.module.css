@@ -17,6 +17,7 @@
   background-position: center;
   background-size: cover;
   margin-bottom: 0.75rem;
+  z-index: -1;
 }
 
 .image::before {

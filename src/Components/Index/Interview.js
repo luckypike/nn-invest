@@ -1,6 +1,8 @@
 import React from 'react'
+import { Route, Link } from 'react-router-dom'
 
 import Photo from './Images/timur.jpg'
+import Sidebar from './Sidebar'
 
 import styles from './Interview.module.css'
 
@@ -55,11 +57,16 @@ export default function Interview () {
             </svg>
           </div>
 
-          <div className={styles.more}>
+          <Link to="/news" className={styles.more}>
             Читать полное интервью
-          </div>
+          </Link>
         </div>
       </div>
+
+      <Route
+        path='/news'
+        render={(props) => <Sidebar {...props} />}
+      />
     </div>
   )
 }
