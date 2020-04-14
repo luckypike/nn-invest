@@ -19,6 +19,10 @@
   margin-bottom: 2rem;
 }
 
+.description {
+  composes: small from './Fonts.module.css';
+}
+
 .sites,
 .structure,
 .position,
@@ -35,11 +39,6 @@
 
   .intro {
     margin-bottom: 2rem;
-  }
-
-  .description {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 

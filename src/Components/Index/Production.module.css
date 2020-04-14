@@ -3,21 +3,16 @@
 }
 
 .title {
-  font-weight: bold;
+  composes: h3 from '../Fonts.module.css';
 }
 
 .numbers {
-  font-family: 'Cormorant Infant', serif;
-  font-size: 4.5rem;
-  line-height: 4.5rem;
+  composes: numbers from '../Fonts.module.css';
   margin-bottom: 0.5rem;
 }
 
 .desc {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 300;
+  composes: small_rbt from '../Fonts.module.css';
   margin-bottom: 2rem;
 }
 

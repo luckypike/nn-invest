@@ -17,21 +17,18 @@
 }
 
 .desc {
-  font-size: 1rem;
-  opacity: 0.5;
+  composes: small from '../Fonts.module.css';
 }
 
 .with {
+  composes: h1 from '../Fonts.module.css';
   margin-bottom: 1rem;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: normal;
 }
 
 .q {
+  composes: h3 from '../Fonts.module.css';
   hyphens: none;
   margin-bottom: 0.75rem;
-  font-weight: bold;
 }
 
 .a {
@@ -45,6 +42,11 @@
 .full {
   display: flex;
   align-items: center;
+}
+
+.more {
+  text-transform: uppercase;
+  composes: h3 from '../Fonts.module.css';
 }
 
 .arrow {
@@ -89,22 +91,12 @@ svg {
     grid-row-gap: 2rem;
   }
 
-  .with {
-    font-size: 2.125rem;
-    line-height: 2.5rem;
-  }
-
   .full {
     grid-column: 2 / span 2;
   }
 
   .text {
     margin-bottom: 0;
-  }
-
-  .more {
-    text-transform: uppercase;
-    font-weight: bold;
   }
 
   .left {
