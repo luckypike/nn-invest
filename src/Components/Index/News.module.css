@@ -1,0 +1,51 @@
+.root {
+
+}
+
+.news {
+  display: block;
+}
+
+.image {
+  position: relative;
+  background-color: #666;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0.75rem;
+  background-position: center;
+}
+
+.image::before {
+  content: '';
+  display: block;
+  padding-top: calc(1 / 1 * 100%);
+}
+
+.text {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.date {
+  font-weight: 300;
+}
+
+@media (min-width: 960px) {
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .date {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

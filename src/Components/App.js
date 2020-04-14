@@ -9,6 +9,7 @@ import Structure from './Index/Structure'
 import Position from './Index/Position'
 import Production from './Index/Production'
 import Potential from './Index/Potential'
+import News from './Index/News'
 
 import styles from './App.module.css'
 
@@ -69,6 +70,10 @@ export default function App () {
 
           <div className={styles.potential}>
             <Potential />
+          </div>
+
+          <div className={styles.news}>
+            <News />
           </div>
         </div>
       </div>
