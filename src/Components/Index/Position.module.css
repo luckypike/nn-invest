@@ -5,6 +5,7 @@
 .title {
   composes: h3 from '../Fonts.module.css';
   max-width: 22.5rem;
+  margin-bottom: 1rem;
 }
 
 .numbers {
@@ -14,11 +15,12 @@
 
 .desc {
   composes: small_rbt from '../Fonts.module.css';
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .text {
   max-width: 40.5rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 960px) {
@@ -26,6 +28,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1.5rem;
+  }
+
+  .title {
+    margin-bottom: 0;
   }
 
   .statistics {
@@ -38,6 +44,10 @@
     grid-column-gap: 1.5rem;
     border-bottom: 1px solid #e5e5e6;
     margin-bottom: 0.75rem;
+  }
+
+  .desc {
+    margin-bottom: 2rem;
   }
 
   .text {

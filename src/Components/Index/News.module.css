@@ -19,6 +19,7 @@
 
 .title {
   composes: h1 from '../Fonts.module.css';
+  margin-bottom: 1rem;
 }
 
 .text {
@@ -30,6 +31,10 @@
   composes: small from '../Fonts.module.css';
 }
 
+.news_item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 960px) {
   .news {
     display: grid;
@@ -39,5 +44,9 @@
 
   .title {
     margin-bottom: 2rem;
+  }
+
+  .news_item:not(:last-child) {
+    margin-bottom: 0;
   }
 }

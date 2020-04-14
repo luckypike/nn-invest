@@ -4,6 +4,7 @@
 
 .title {
   composes: h3 from '../Fonts.module.css';
+  margin-bottom: 1rem;
 }
 
 .numbers {
@@ -13,7 +14,7 @@
 
 .desc {
   composes: small_rbt from '../Fonts.module.css';
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 960px) {
@@ -21,6 +22,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1.5rem;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .desc {
+    margin-bottom: 2rem;
   }
 
   .statistics {
