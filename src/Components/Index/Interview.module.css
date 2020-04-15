@@ -71,6 +71,10 @@ svg {
   width: 0.625rem;
 }
 
+.container {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 960px) {
   .photo {
     display: grid;

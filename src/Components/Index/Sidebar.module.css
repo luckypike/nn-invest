@@ -86,3 +86,9 @@ svg {
     margin-bottom: 3rem;
   }
 }
+
+@media (min-width: 1680px) {
+  .root {
+    width: 1440px;
+  }
+}
