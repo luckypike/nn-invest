@@ -50,17 +50,17 @@ export default function Interview () {
           </p>
         </div>
 
-        <div className={styles.full}>
+        <Link to="/interview/1" className={styles.full}>
           <div className={styles.arrow}>
             <svg viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.5 6L0 0L2.5 6L0 11.5L9.5 6Z" fill="white"/>
             </svg>
           </div>
 
-          <Link to="/interview/1" className={styles.more}>
+          <div className={styles.more}>
             Читать полное интервью
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
 
       <Route

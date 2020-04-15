@@ -44,11 +44,11 @@
   align-items: center;
   cursor: pointer;
   user-select: none;
+  text-decoration: none;
+  color: #000;
 }
 
 .more {
-  text-decoration: none;
-  color: #000;
   text-transform: uppercase;
   composes: h3 from '../Fonts.module.css';
 }
