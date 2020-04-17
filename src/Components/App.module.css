@@ -7,20 +7,16 @@
   margin-bottom: 2rem;
 }
 
+.intro:first-child {
+  margin-bottom: 1rem;
+}
+
 .left {
   margin-bottom: 1rem;
 }
 
-.youtube {
-  margin-bottom: 2rem;
-}
-
 .interview {
   margin-bottom: 2rem;
-}
-
-.description {
-  composes: small from './Fonts.module.css';
 }
 
 .sites,
@@ -60,6 +56,10 @@
     margin-bottom: 4.5rem;
   }
 
+  .intro:first-child {
+    margin-bottom: 3rem;
+  }
+
   .left {
     margin-bottom: 0;
     grid-column: 2;
@@ -67,10 +67,6 @@
 
   .right {
     grid-column: 3;
-  }
-
-  .youtube {
-    margin-bottom: 3rem;
   }
 
   .interview {

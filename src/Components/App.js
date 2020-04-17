@@ -4,7 +4,6 @@ import classNames from 'classnames'
 import { Link } from 'react-router-dom'
 
 import Header from './Header'
-import Youtube from './Index/Youtube'
 import Interview from './Index/Interview'
 import Sites from './Index/Sites'
 import Structure from './Index/Structure'
@@ -46,14 +45,6 @@ export default function App ({ location }) {
 
           <div className={styles.right}>
             Корпорация развития может предложить инвестору варианты размещения предприятия и подобрать площадку для строительства. Она оказывает содействие в подведении инженерной и коммунальной инфраструктуры. При необходимости Корпорация поможет с поиском соинвестора для проекта, а также предоставит информацию о мерах поддержки, которые оказывает региональное правительство бизнесу, подскажет, как привлечь дополнительное финансирование для проекта.
-          </div>
-        </div>
-
-        <div className={styles.youtube}>
-          <Youtube />
-
-          <div className={styles.description}>
-            Корпорация развития Нижегородской области
           </div>
         </div>
 
