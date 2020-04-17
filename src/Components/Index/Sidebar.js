@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+
+import { Context } from '../Context'
 
 import styles from './Sidebar.module.css'
 
@@ -12,9 +14,11 @@ Sidebar.propTypes = {
 }
 
 export default function Sidebar ({ title, desc, text, image }) {
+  const { setOverlay } = useContext(Context)
+
   return (
     <div className={styles.root}>
-      <Link to='/' className={styles.close}>
+      <Link to='/' className={styles.close} onClick={setOverlay}>
         <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.5 1.5L14.5 14.5M14.5 1.5L1.5 14.5" stroke="white" strokeWidth="2"/>
         </svg>

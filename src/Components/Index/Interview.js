@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Route, Link } from 'react-router-dom'
+import { Context } from '../Context'
 
 import Photo from './Images/timur.jpg'
 import Sidebar from './Sidebar'
@@ -7,6 +8,8 @@ import Sidebar from './Sidebar'
 import styles from './Interview.module.css'
 
 export default function Interview () {
+  const { setOverlay } = useContext(Context)
+
   return (
     <div className={styles.root}>
       <div className={styles.photo}>
@@ -50,7 +53,7 @@ export default function Interview () {
           </p>
         </div>
 
-        <Link to="/interview/1" className={styles.full}>
+        <Link to="/interview/1" className={styles.full} onClick={setOverlay}>
           <div className={styles.arrow}>
             <svg viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.5 6L0 0L2.5 6L0 11.5L9.5 6Z" fill="white"/>

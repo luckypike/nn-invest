@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Route, Link } from 'react-router-dom'
 
+import { Context } from '../Context'
 import Sidebar from './Sidebar'
 import Stairs from './Images/stairs.jpg'
 import Fair from './Images/fair.jpg'
@@ -8,6 +9,8 @@ import Fair from './Images/fair.jpg'
 import styles from './News.module.css'
 
 export default function News () {
+  const { setOverlay } = useContext(Context)
+
   return (
     <div className={styles.root}>
       <div className={styles.title}>
@@ -15,7 +18,7 @@ export default function News () {
       </div>
 
       <div className={styles.news}>
-        <Link to='/news/1' className={styles.news_item}>
+        <Link to='/news/1' className={styles.news_item} onClick={setOverlay}>
           <div className={styles.image} style={{ backgroundImage: `url(${Stairs})` }} />
 
           <div className={styles.text}>
@@ -27,7 +30,7 @@ export default function News () {
           </div>
         </Link>
 
-        <Link to='/news/2' className={styles.news_item}>
+        <Link to='/news/2' className={styles.news_item} onClick={setOverlay}>
           <div className={styles.image} style={{ backgroundImage: `url(${Fair})` }} />
 
           <div className={styles.text}>
