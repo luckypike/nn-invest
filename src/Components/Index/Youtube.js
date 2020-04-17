@@ -22,15 +22,16 @@ function Frame ({ id }) {
   return (
     <div className={classNames(styles.youtube, { [styles.active]: active })} onClick={() => setActive(true)} >
       {!active &&
-        <img src={`https://img.youtube.com/vi/${id}/maxresdefault.jpg`} />
+        <img src={`https://img.youtube.com/vi/${id}/maxresdefault.jpg`} alt='poster' />
       }
 
       {active &&
         <iframe
           src={`https://www.youtube.com/embed/${id}?autoplay=1`}
-          frameBorder="0"
+          title='youtubeFrame'
+          frameBorder='0'
           allowFullScreen
-          allow="autoplay"
+          allow='autoplay'
         />
       }
     </div>
