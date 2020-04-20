@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker'
 import { HashRouter, Route } from 'react-router-dom'
 
 ReactDOM.render(
-  <HashRouter basename='/invest-test'>
+  <HashRouter>
     <React.StrictMode>
       <Route
         path='/'

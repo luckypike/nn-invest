@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Context } from './Context'
 
 import Header from './Header'
-import Interview from './Index/Interview'
+// import Interview from './Index/Interview'
 import Sites from './Index/Sites'
 import Structure from './Index/Structure'
 import Position from './Index/Position'
@@ -58,9 +58,9 @@ export default function App () {
             </div>
           </div>
 
-          <div className={styles.interview}>
+          {/* <div className={styles.interview}>
             <Interview />
-          </div>
+          </div> */}
 
           <div className={styles.sites}>
             <Sites />

@@ -11,6 +11,7 @@
 .content {
   height: 100vh;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 .close {
@@ -67,7 +68,7 @@ svg {
 
 @media (min-width: 960px) {
   .root {
-    width: 1044px;
+    width: 1024px;
     margin-left: auto;
   }
 
@@ -84,11 +85,5 @@ svg {
 
   .desc {
     margin-bottom: 3rem;
-  }
-}
-
-@media (min-width: 1680px) {
-  .root {
-    width: 1440px;
   }
 }
