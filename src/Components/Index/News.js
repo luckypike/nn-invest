@@ -18,7 +18,7 @@ export default function News () {
       </div>
 
       <div className={styles.news}>
-        <Link to='/news/1' className={styles.news_item} onClick={setOverlay}>
+        <Link to='/news/1' className={styles.news_item} onClick={() => setOverlay(true)}>
           <div className={styles.image} style={{ backgroundImage: `url(${Stairs})` }} />
 
           <div className={styles.text}>
@@ -30,7 +30,7 @@ export default function News () {
           </div>
         </Link>
 
-        <Link to='/news/2' className={styles.news_item} onClick={setOverlay}>
+        <Link to='/news/2' className={styles.news_item} onClick={() => setOverlay(true)}>
           <div className={styles.image} style={{ backgroundImage: `url(${Fair})` }} />
 
           <div className={styles.text}>

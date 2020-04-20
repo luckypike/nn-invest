@@ -16,33 +16,22 @@ import styles from './App.module.css'
 import './App.css'
 
 export default function App () {
-  const [active, setActive] = useState(false)
-
-  const setOverlay = () => {
-    setActive(!active)
-  }
+  const [overlay, setOverlay] = useState(false)
 
   useEffect(() => {
-    const overlay = localStorage.getItem('active') || false
-    setActive(JSON.parse(overlay))
-  }, [])
-
-  useEffect(() => {
-    localStorage.setItem('active', JSON.stringify(active))
-
-    if (active) {
+    if (overlay) {
       document.documentElement.classList.add('active')
     } else {
       document.documentElement.classList.remove('active')
     }
-  }, [active])
+  }, [overlay])
 
   return (
     <Context.Provider value={{
       setOverlay
     }}>
       <div>
-        <Link to='/' className={classNames(styles.overlay, { [styles.active]: active })} onClick={setOverlay} />
+        <Link to='/' className={classNames(styles.overlay, { [styles.active]: overlay })} onClick={() => setOverlay(false)} />
 
         <Header />
 
