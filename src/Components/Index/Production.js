@@ -13,43 +13,21 @@ export default function Production () {
         <div className={styles.group}>
           <div>
             <div className={styles.numbers}>
-              79,9%
+              99,3%
             </div>
 
             <div className={styles.desc}>
-              Выпуска российских автобусов
+              Автобусов (не более 5 тонн)
             </div>
           </div>
 
           <div>
             <div className={styles.numbers}>
-              39,6%
+              37,3%
             </div>
 
             <div className={styles.desc}>
-              Выпуска российских грузовых автомобилей
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.group}>
-          <div>
-            <div className={styles.numbers}>
-              33,4%
-            </div>
-
-            <div className={styles.desc}>
-              Производства ПВХ
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.numbers}>
-              41,5%
-            </div>
-
-            <div className={styles.desc}>
-              Производства стальных труб
+              Грузовых автотранспортных средств
             </div>
           </div>
         </div>
@@ -57,11 +35,21 @@ export default function Production () {
         <div className={styles.group}>
           <div>
             <div className={styles.numbers}>
-              13%
+              33,8%
             </div>
 
             <div className={styles.desc}>
-              Производства Этилена
+              Полимеров винилхлорида
+            </div>
+          </div>
+
+          <div>
+            <div className={styles.numbers}>
+              33,0%
+            </div>
+
+            <div className={styles.desc}>
+              Стекла безопасного
             </div>
           </div>
         </div>

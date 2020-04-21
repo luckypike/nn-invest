@@ -11,10 +11,6 @@ export default function Header () {
       <video playsInline autoPlay loop muted poster={Poster}>
         <source src={Intro} type="video/mp4" />
       </video>
-
-      <div className={styles.title}>
-        Как Корпорация развития Нижегородской области помогает бизнесу
-      </div>
     </div>
   )
 }
