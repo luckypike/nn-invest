@@ -1,13 +1,23 @@
 .h1 {
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: calc(var(--yr) * 7);
+  line-height: calc(var(--yr) * 8);
   font-weight: bold;
+
+  @media (--m) {
+    font-size: calc(var(--yr) * 8.5);
+    line-height: calc(var(--yr) * 10);
+  }
 }
 
 .h2 {
-  font-size: 1.375rem;
-  line-height: 1.75rem;
+  font-size: calc(var(--yr) * 5.5);
+  line-height: calc(var(--yr) * 7);
   font-weight: bold;
+
+  @media (--m) {
+    font-size: calc(var(--yr) * 6);
+    line-height: calc(var(--yr) * 8);
+  }
 }
 
 .h3 {
@@ -16,57 +26,45 @@
 
 .at {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4375rem;
-  line-height: 1.75rem;
+  font-size: calc(var(--yr) * 5.75);
+  line-height: calc(var(--yr) * 7);
+
+  @media (--m) {
+    font-size: calc(var(--yr) * 8.75);
+    line-height: calc(var(--yr) * 11);
+  }
 }
 
 .small {
-  font-size: 0.8125rem;
-  line-height: 1.25rem;
+  font-size: calc(var(--yr) * 3.25);
+  line-height: calc(var(--yr) * 5);
   font-weight: 300;
+
+  @media (--m) {
+    font-size: calc(var(--yr) * 4);
+    line-height: calc(var(--yr) * 6);
+  }
 }
 
 .small_rbt {
   font-family: 'Roboto', sans-serif;
-  font-size: 0.8125rem;
-  line-height: 1.25rem;
+  font-size: calc(var(--yr) * 3.25);
+  line-height: calc(var(--yr) * 5);
   font-weight: 300;
+
+  @media (--m) {
+    font-size: calc(var(--yr) * 4);
+    line-height: calc(var(--yr) * 6);
+  }
 }
 
 .numbers {
   font-family: 'Cormorant Infant', serif;
-  font-size: 2.75rem;
-  line-height: 2.75rem;
-}
+  font-size: calc(var(--yr) * 11);
+  line-height: calc(var(--yr) * 11);
 
-@media (min-width: 960px) {
-  .h1 {
-    font-size: 2.125rem;
-    line-height: 2.5rem;
-  }
-
-  .h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .at {
-    font-size: 2.1875rem;
-    line-height: 2.75rem;
-  }
-
-  .small {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .small_rbt {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .numbers {
-    font-size: 4.5rem;
-    line-height: 4.5rem;
+  @media (--m) {
+    font-size: calc(var(--yr) * 18);
+    line-height: calc(var(--yr) * 18);
   }
 }
