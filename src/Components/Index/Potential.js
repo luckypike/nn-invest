@@ -39,10 +39,6 @@ export default function Potential () {
 
       <div className={styles.photo}>
         <div className={styles.image} style={{ backgroundImage: `url(${Plant})` }} />
-
-        {/* <div className={styles.description}>
-          Кстовский нефтеперерабатывающий завод. Фото: Александр Ивасенко / Студия промышленной фотографии.
-        </div> */}
       </div>
     </div>
   )

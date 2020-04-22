@@ -2,30 +2,86 @@
   padding: 0 1rem;
   max-width: 90rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
+
+  @media (--s) {
+    padding: 0 3.75rem;
+    margin-bottom: 4.5rem;
+  }
 }
 
 .intro {
   display: block;
   margin: 2rem 0;
+
+  @media (--s) {
+    margin: 3rem 0;
+  }
+
+  @media (--m) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    margin-bottom: 4.5rem;
+    grid-row-gap: 1rem;
+  }
 }
 
-.intro:first-child {
-  margin-bottom: 1rem;
-}
+.title {
+  & h1 {
+    font-size: 2rem;
+    line-height: normal;
+    font-weight: bold;
+    margin: 0 0 1rem;
 
-.title h1 {
-  font-size: 2rem;
-  line-height: normal;
-  font-weight: bold;
-  margin: 0 0 1rem;
+    @media (--s) {
+      font-size: 2.75rem;
+      line-height: 3rem;
+    }
+  }
+
+  @media (--m) {
+    grid-column: 2 / span 2;
+  }
 }
 
 .left {
   margin-bottom: 0.5rem;
+
+  @media (--m) {
+    margin-bottom: 0;
+    grid-column: 2;
+
+    & p {
+      margin-bottom: 1rem;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.right {
+  @media (--m) {
+    grid-column: 3;
+
+    & p {
+      margin-bottom: 1rem;
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .interview {
   margin-bottom: 2rem;
+
+  @media (--m) {
+    margin-bottom: 4.5rem;
+  }
 }
 
 .sites,
@@ -39,64 +95,8 @@
 
 .overlay {
   display: none;
-}
 
-@media (min-width: 720px) {
-  .root {
-    padding: 0 3.75rem;
-  }
-
-  .intro {
-    margin: 3rem 0;
-  }
-
-  .title h1 {
-    font-size: 2.75rem;
-    line-height: 3rem;
-  }
-}
-
-@media (min-width: 960px) {
-  .intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1.5rem;
-    margin-bottom: 4.5rem;
-    grid-row-gap: 1rem;
-  }
-
-  .title {
-    grid-column: 2 / span 2;
-  }
-
-  .intro:first-child {
-    margin-bottom: 3rem;
-  }
-
-  .left {
-    margin-bottom: 0;
-    grid-column: 2;
-  }
-
-  .right {
-    grid-column: 3;
-  }
-
-  .right p,
-  .left p {
-    margin-bottom: 1rem;
-  }
-
-  .right p:last-child,
-  .left p:last-child {
-    margin-bottom: 0;
-  }
-
-  .interview {
-    margin-bottom: 4.5rem;
-  }
-
-  .overlay {
+  @media (--m) {
     display: block;
     position: fixed;
     width: 100%;
@@ -108,10 +108,10 @@
     background: rgba(0, 0, 0, 0.3);
     transition: all 0.3s;
     z-index: 1;
-  }
 
-  .active {
-    opacity: 1;
-    visibility: visible;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }

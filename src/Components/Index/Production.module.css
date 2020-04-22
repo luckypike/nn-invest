@@ -1,10 +1,20 @@
 .root {
   display: block;
+
+  @media (--m) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1.5rem;
+  }
 }
 
 .title {
   composes: h3 from '../Fonts.module.css';
   margin-bottom: 1rem;
+
+  @media (--m) {
+    margin-bottom: 0;
+  }
 }
 
 .numbers {
@@ -15,35 +25,27 @@
 .desc {
   composes: small_rbt from '../Fonts.module.css';
   margin-bottom: 0.75rem;
-}
 
-@media (min-width: 960px) {
-  .root {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1.5rem;
-  }
-
-  .title {
-    margin-bottom: 0;
-  }
-
-  .desc {
+  @media (--m) {
     margin-bottom: 2rem;
   }
+}
 
-  .statistics {
+.statistics {
+  @media (--m) {
     grid-column: span 2;
   }
+}
 
-  .group {
+.group {
+  @media (--m) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
     margin-bottom: 0.75rem;
-  }
 
-  .group:not(:last-child) {
-    border-bottom: 1px solid #e5e5e6;
+    &:not(:last-child) {
+      border-bottom: 1px solid #e5e5e6;
+    }
   }
 }
