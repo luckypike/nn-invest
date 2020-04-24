@@ -6,69 +6,30 @@ export default function Position () {
   return (
     <div className={styles.root}>
       <div className={styles.title}>
-        Позиции Нижегородской области в России
+        Позиции Нижегородской области в рейтинге регионов России
       </div>
 
-      <div className={styles.statistics}>
-        <div className={styles.group}>
-          <div>
-            <div className={styles.numbers}>
-              4
-            </div>
-
-            <div className={styles.desc}>
-              Место в рейтинге субъектов РФ по инновационному потенциалу (Агентство «Эксперт РА»)
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.numbers}>
-              7
-            </div>
-
-            <div className={styles.desc}>
-              Место по объему отгруженной инновационной продукции
-            </div>
-          </div>
+      <div className={styles.position_item}>
+        <div className={styles.place}>
+          4 место
         </div>
 
-        <div className={styles.group}>
-          <div>
-            <div className={styles.numbers}>
-              4
-            </div>
+        <ul className={styles.list}>
+          <li>По инновационному потенциалу (агентство «Эксперт РА»)</li>
+          <li>По числу людей, занятых в НИОКР</li>
+          <li>По индексу научно-технологического развития субъектов РФ («РИА Рейтинг»)</li>
+        </ul>
+      </div>
 
-            <div className={styles.desc}>
-              Место в России по числу людей, занятых в НИОКР
-            </div>
-          </div>
-
-          <div>
-            <div className={styles.numbers}>
-              7
-            </div>
-
-            <div className={styles.desc}>
-              Место в России по объему отгрузки продукции обрабатывающих предприятий
-            </div>
-          </div>
+      <div className={styles.position_item}>
+        <div className={styles.place}>
+          7 место
         </div>
 
-        <div className={styles.group}>
-          <div>
-            <div className={styles.numbers}>
-              4
-            </div>
-
-            <div className={styles.desc}>
-              Место по индексу научно-технологического развития субъектов РФ («РИА Рейтинг»)
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.text}>
-          По данным Росстата индекс химического производства Нижегородской области в 2019 году составил 113,7%, в то время как общероссийский показатель находится на уровне 103,6%
-        </div>
+        <ul className={styles.list}>
+          <li>По объему отгруженной инновационной продукции</li>
+          <li>По объему отгрузки продукции обрабатывающих предприятий</li>
+        </ul>
       </div>
     </div>
   )

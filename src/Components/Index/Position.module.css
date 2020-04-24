@@ -3,56 +3,44 @@
 
   @media (--m) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
   }
 }
 
 .title {
-  composes: h3 from '../Fonts.module.css';
-  max-width: 22.5rem;
-  margin-bottom: 1rem;
-
-  @media (--m) {
-    margin-bottom: 0;
-  }
+  composes: title from './Production.module.css';
+  margin-bottom: calc(var(--yr) * 12);
 }
 
-.numbers {
-  composes: numbers from '../Fonts.module.css';
-  margin-bottom: 0.5rem;
+.place {
+  composes: nums from './Production.module.css';
+  margin-bottom: calc(var(--yr) * 3);
 }
 
-.desc {
-  composes: small_rbt from '../Fonts.module.css';
-  margin-bottom: 1rem;
+.list {
+  font-size: calc(var(--yr) * 4.5);
+  line-height: calc(var(--yr) * 6);
 
-  @media (--m) {
-    margin-bottom: 2rem;
-  }
-}
+  & li {
+    position: relative;
+    padding-left: calc(var(--yr) * 10.5);
 
-.text {
-  max-width: 40.5rem;
-  margin-bottom: 0.75rem;
+    &:not(:last-child) {
+      margin-bottom: calc(var(--yr) * 4);
+    }
 
-  @media (--m) {
-    margin-bottom: 3rem;
-  }
-}
-
-.statistics {
-  @media (--m) {
-    grid-column: span 2;
-  }
-}
-
-.group {
-  @media (--m) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.5rem;
-    border-bottom: 1px solid #e5e5e6;
-    margin-bottom: 0.75rem;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #BBAA8C;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
   }
 }

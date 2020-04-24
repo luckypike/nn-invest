@@ -1,0 +1,32 @@
+.root {
+  display: block;
+
+  @media (--m) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: calc(var(--xr) * 1.875);
+    grid-row-gap: calc(var(--yr) * 12);
+  }
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+
+  @media (--s) {
+    font-size: calc(var(--yr) * 8.5);
+    line-height: calc(var(--yr) * 12);
+  }
+
+  @media (--m) {
+    grid-column: -1 / 1;
+    width: calc(2 / 3 * 100%);
+  }
+}
+
+.left {
+  grid-column: 2;
+}
+
+.right {
+  grid-column: 3;
+}

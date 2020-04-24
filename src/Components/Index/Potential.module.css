@@ -1,65 +1,20 @@
-.group {
+.root {
   display: block;
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid #e5e5e6;
-
-  &:last-child {
-    margin-bottom: 0.75rem;
-    border-bottom: none;
-
-    @media (--m) {
-      margin-bottom: 4.5rem;
-    }
-  }
 
   @media (--m) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
   }
 }
 
 .title {
-  composes: h3 from '../Fonts.module.css';
-  margin-bottom: 1rem;
-
-  @media (--m) {
-    margin-bottom: 0;
-  }
+  composes: title from './Production.module.css';
+  margin-bottom: calc(var(--yr) * 12);
 }
 
 .top {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.75rem;
-  line-height: 2.75rem;
-  margin-bottom: 0.5rem;
-
-  @media (--m) {
-    font-size: 4.5rem;
-    line-height: 4.5rem;
-  }
-}
-
-.num {
-  font-family: 'Cormorant Infant', serif;
-}
-
-.desc {
-  composes: small_rbt from '../Fonts.module.css';
-  margin-bottom: 0.75rem;
-
-  @media (--m) {
-    margin-bottom: 3rem;
-  }
-}
-
-.text {
-  composes: at from '../Fonts.module.css';
-  margin-bottom: 2rem;
-
-  @media (--m) {
-    margin: 0 0 3rem calc(1 / 3 * 100% + 0.5rem);
-  }
+  composes: nums from './Production.module.css';
 }
 
 .photo {
@@ -83,8 +38,4 @@
     display: block;
     padding-top: calc(9 / 16 * 100%);
   }
-}
-
-.description {
-  composes: small from '../Fonts.module.css';
 }

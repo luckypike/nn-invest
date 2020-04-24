@@ -5,6 +5,7 @@ import { Context } from './Context'
 
 import Header from './Header'
 // import Interview from './Index/Interview'
+import Leaders from './Index/Leaders'
 import Sites from './Index/Sites'
 import Structure from './Index/Structure'
 import Position from './Index/Position'
@@ -43,17 +44,19 @@ export default function App () {
               </h1>
             </div>
 
-            <div className={styles.left}>
+            <div className={styles.text}>
               <p>
                 В Нижегородской области сформирована широкая инфраструктура поддержки инвесторов. В нее, в том числе, входит Корпорация развития региона. Организация создана правительством области для привлечения инвестиций и дальнейшего сопровождения инвестпроектов предпринимателей. Начиная или развивая дело, инвестор может обратиться за помощью в Корпорацию развития. Среди ее задач — оказать поддержку бизнесмену на всех этапах реализации инвестиционного проекта — от знакомства с регионом до запуска предприятия.
               </p>
+            </div>
 
+            <div className={styles.text}>
               <p>
                 Работа с Корпорацией развития Нижегородской области делает процесс взаимодействия органов исполнительной власти и бизнеса четким и понятным. Инвестору не придется самому обращаться в другие инстанции для решения своих задач. К тому же она координирует работу института инвестиционных уполномоченных, в состав которого входят представители не только органов власти и муниципалитетов, но и ресурсоснабжающих организаций. Все это позволяет существенно упростить работу инвестора, в том числе снизить временные и финансовые затраты, а также максимально эффективно решать технические вопросы инвесторов.
               </p>
             </div>
 
-            <div className={styles.right}>
+            <div className={styles.text}>
               <p>
                 Корпорация развития может предложить инвестору варианты размещения предприятия и подобрать площадку для строительства. Она оказывает содействие в подведении инженерной и коммунальной инфраструктуры. При необходимости Корпорация поможет с поиском соинвестора для проекта, а также предоставит информацию о мерах поддержки, которые оказывает региональное правительство бизнесу, подскажет, как привлечь дополнительное финансирование для проекта.
               </p>
@@ -68,28 +71,40 @@ export default function App () {
             <Interview />
           </div> */}
 
-          <div className={styles.sites}>
-            <Sites />
+          <div className={styles.leaders}>
+            <Leaders />
           </div>
 
+          {/* <div className={styles.sites}>
+            <Sites />
+          </div> */}
+
+          {/* <div className={styles.news}>
+            <News />
+          </div> */}
+        </div>
+
+        <div className={styles.region}>
+          <div className={styles.region_container}>
+            <div className={styles.production}>
+              <Production />
+            </div>
+
+            <div className={styles.position}>
+              <Position />
+            </div>
+
+            <div className={styles.potential}>
+              <Potential />
+            </div>
+
+            <div className={styles.deer} />
+          </div>
+        </div>
+
+        <div className={styles.root}>
           <div className={styles.structure}>
             <Structure />
-          </div>
-
-          <div className={styles.position}>
-            <Position />
-          </div>
-
-          <div className={styles.production}>
-            <Production />
-          </div>
-
-          <div className={styles.potential}>
-            <Potential />
-          </div>
-
-          <div className={styles.news}>
-            <News />
           </div>
         </div>
       </div>

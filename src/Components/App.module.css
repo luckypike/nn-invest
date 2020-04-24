@@ -1,12 +1,11 @@
 .root {
   padding: 0 1rem;
-  max-width: 90rem;
+  max-width: 100rem;
   margin: 0 auto;
   margin-bottom: 2rem;
 
   @media (--s) {
-    padding: 0 3.75rem;
-    margin-bottom: 4.5rem;
+    padding: 0 13.75rem;
   }
 }
 
@@ -15,7 +14,7 @@
   margin: 2rem 0;
 
   @media (--s) {
-    margin: 3rem 0;
+    margin: 4.5rem 0;
   }
 
   @media (--m) {
@@ -23,29 +22,35 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1.5rem;
     margin-bottom: 4.5rem;
-    grid-row-gap: 1rem;
+    grid-row-gap: calc(var(--yr) * calc(var(--s2) * 3));
   }
 }
 
 .title {
   & h1 {
+    font-family: 'PT Serif', serif;
     font-size: 2rem;
     line-height: normal;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0 0 1rem;
 
     @media (--s) {
-      font-size: 2.75rem;
-      line-height: 3rem;
+      font-size: calc(var(--yr) * 11.5);
+      line-height: calc(var(--yr) * 15);
     }
   }
 
   @media (--m) {
-    grid-column: 2 / span 2;
+    grid-column: -1 / 1;
+    width: calc(2 / 3 * 100%);
+
+    & h1 {
+      margin: 0;
+    }
   }
 }
 
-.left {
+/* .left {
   margin-bottom: 0.5rem;
 
   @media (--m) {
@@ -74,7 +79,7 @@
       margin-bottom: 0;
     }
   }
-}
+} */
 
 .interview {
   margin-bottom: 2rem;
@@ -85,12 +90,32 @@
 }
 
 .sites,
-.structure,
-.position,
-.production,
-.potential {
-  border-bottom: 1px solid #e5e5e6;
+.structure {
   margin-bottom: 0.75rem;
+}
+
+.leaders {
+  margin-bottom: calc(var(--yr) * 18);
+}
+
+.production,
+.position {
+  margin-bottom: calc(var(--yr) * 12);
+}
+
+.region {
+  padding: calc(var(--yr) * 18) 0;
+  margin-bottom: calc(var(--yr) * 18);
+  background-color: #f9f6f1;
+  z-index: -1;
+}
+
+.region_container {
+  padding: 0 13.75rem;
+  background: url('./Index/Images/deer.png') no-repeat;
+  background-size: contain;
+  background-position: right;
+  z-index: -2;
 }
 
 .overlay {
