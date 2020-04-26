@@ -1,0 +1,50 @@
+.root {
+  display: block;
+
+  @media (--m) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.875rem;
+    grid-row-gap: 24px;
+  }
+}
+
+.heading {
+  composes: title from './Production.module.css';
+  margin-bottom: calc(var(--yr) * 12);
+}
+
+.resident {
+  border: 1px solid #DBDFE3;
+}
+
+.logo {
+  padding: 24px 0;
+}
+
+.image {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-top: calc(1 / 2 * 100%);
+  }
+
+  & img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: calc(var(--yr) * 8);
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  font-size: calc(var(--yr) * 5);
+  line-height: calc(var(--yr) * 6);
+}

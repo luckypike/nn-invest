@@ -88,26 +88,6 @@ export default function Production () {
           газетной бумаги (в рулонах)
         </div>
       </div>
-
-      <div className={styles.item}>
-        <div className={styles.nums}>
-          15,8%
-        </div>
-
-        <div className={styles.description}>
-          маргарина
-        </div>
-      </div>
-
-      <div className={styles.item}>
-        <div className={styles.nums}>
-          9,5%
-        </div>
-
-        <div className={styles.description}>
-          майонеза
-        </div>
-      </div>
     </div>
   )
 }

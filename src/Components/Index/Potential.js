@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Plant from './Images/plant.jpg'
-
 import styles from './Potential.module.css'
 
 export default function Potential () {
@@ -13,7 +11,7 @@ export default function Potential () {
 
       <div>
         <div className={styles.top}>
-          топ 5
+          топ-5
         </div>
 
         <div className={styles.desc}>
@@ -23,17 +21,13 @@ export default function Potential () {
 
       <div>
         <div className={styles.top}>
-          топ 10
+          топ-10
         </div>
 
         <div className={styles.desc}>
           регионов с максимальным инвестиционным потенциалом (Агентство «Эксперт РА»)
         </div>
       </div>
-
-      {/* <div className={styles.photo}>
-        <div className={styles.image} style={{ backgroundImage: `url(${Plant})` }} />
-      </div> */}
     </div>
   )
 }

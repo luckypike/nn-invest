@@ -11,6 +11,9 @@
 
 .title {
   font-family: 'PT Serif', serif;
+  font-size: calc(var(--yr) * 6);
+  line-height: calc(var(--yr) * 8);
+  margin-bottom: calc(var(--yr) * 4);
 
   @media (--s) {
     font-size: calc(var(--yr) * 8.5);

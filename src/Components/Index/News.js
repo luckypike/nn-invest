@@ -3,8 +3,6 @@ import { Route, Link } from 'react-router-dom'
 
 import { Context } from '../Context'
 import Sidebar from './Sidebar'
-import Stairs from './Images/stairs.jpg'
-import Fair from './Images/fair.jpg'
 
 import styles from './News.module.css'
 
@@ -14,31 +12,27 @@ export default function News () {
   return (
     <div className={styles.root}>
       <div className={styles.title}>
-        Новости
+        События
       </div>
 
       <div className={styles.news}>
         <Link to='/news/1' className={styles.news_item} onClick={() => setOverlay(true)}>
-          <div className={styles.image} style={{ backgroundImage: `url(${Stairs})` }} />
+          <div className={styles.date}>
+            10 апреля 2020 г.
+          </div>
 
           <div className={styles.text}>
             Больше 7000 обращений от нижегородских предпринимателей поступило инвеступолномоченным за прошедшую неделю
           </div>
-
-          <div className={styles.date}>
-            10 апреля 2020 г.
-          </div>
         </Link>
 
         <Link to='/news/2' className={styles.news_item} onClick={() => setOverlay(true)}>
-          <div className={styles.image} style={{ backgroundImage: `url(${Fair})` }} />
+          <div className={styles.date}>
+            31 марта 2020 г.
+          </div>
 
           <div className={styles.text}>
             Инвесторы смогут обратиться за консультацией по мерам поддержки, связанным с эпидемиологической обстановкой, к инвеступолномоченным или на горячую линию поддержки инвесторов
-          </div>
-
-          <div className={styles.date}>
-            31 марта 2020 г.
           </div>
         </Link>
       </div>
@@ -48,7 +42,6 @@ export default function News () {
         render={(props) =>
           <Sidebar
             {...props}
-            image={Stairs}
             title={<StairsTitle />}
             desc={<StairsDesc />}
             text={<StairsText />}
@@ -61,7 +54,6 @@ export default function News () {
         render={(props) =>
           <Sidebar
             {...props}
-            image={Fair}
             title={<FairTitle />}
             desc={<FairDesc />}
             text={<FairText />}

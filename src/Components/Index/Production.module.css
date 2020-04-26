@@ -6,6 +6,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1.5rem;
     grid-row-gap: calc(var(--yr) * 8);
+    padding-bottom: calc(var(--yr) * 12);
   }
 }
 
@@ -25,10 +26,6 @@
   }
 }
 
-.item {
-
-}
-
 .nums {
   font-size: calc(var(--yr) * 14);
   line-height: calc(var(--yr) * 15);
@@ -36,19 +33,5 @@
 }
 
 .description {
-  /* margin-bottom: calc(var(--yr) * 8); */
   line-height: calc(var(--yr) * 6);
 }
-
-/* .group {
-  @media (--m) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.5rem;
-    margin-bottom: 0.75rem;
-
-    &:not(:last-child) {
-      border-bottom: 1px solid #e5e5e6;
-    }
-  }
-} */
