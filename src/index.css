@@ -3,6 +3,8 @@
 :root {
   --yr: 0.25rem;
   --xr: 1rem;
+  --pt_serif: 'PT Serif', serif;
+  --ibm_serif: 'IBM Plex Sans', sans-serif;
 
   --s1: 2;
   --s2: 3;
@@ -30,7 +32,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: var(--ibm_serif);
   font-size: calc(var(--yr) * 4);
   line-height: calc(var(--yr) * 6);
 
@@ -52,4 +54,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #141414;
 }

@@ -3,16 +3,14 @@
 
   @media (--m) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1.875rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: calc(var(--yr) * 7.5);
     margin-bottom: calc(var(--yr) * 18);
   }
 }
 
 .title {
-  font-family: 'PT Serif', serif;
-  font-size: calc(var(--yr) * 8.5);
-  line-height: calc(var(--yr) * 12);
+  composes: h2 from '../Fonts.module.css';
   margin-bottom: 1rem;
 
   @media (--m) {
@@ -21,20 +19,15 @@
 }
 
 .text {
-  font-family: 'PT Serif', serif;
-  font-weight: bold;
-  font-size: calc(var(--yr) * 5);
-  line-height: calc(var(--yr) * 6);
+  composes: fn from '../Fonts.module.css';
 }
 
 .date {
-  composes: small from '../Fonts.module.css';
+  composes: bt from '../Fonts.module.css';
   margin-bottom: calc(var(--yr) * 3);
 }
 
 .news_item {
-  text-decoration: none;
-  color: #000;
   display: block;
 
   &:not(:last-child) {

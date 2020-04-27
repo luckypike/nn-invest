@@ -12,19 +12,13 @@
   @media (--m) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 1.875rem;
+    grid-column-gap: calc(var(--yr) * 7.5);
     grid-row-gap: calc(var(--yr) * 8);
   }
 }
 
 .title {
-  font-family: 'PT Serif', serif;
-  font-weight: bold;
-
-  @media (--s) {
-    font-size: calc(var(--yr) * 6);
-    line-height: calc(var(--yr) * 8);
-  }
+  composes: h3 from '../Fonts.module.css';
 
   @media (--m) {
     grid-column: -1 / 1;
@@ -34,8 +28,7 @@
 }
 
 .nums {
-  font-size: calc(var(--yr) * 14);
-  line-height: calc(var(--yr) * 15);
+  composes: numbers from '../Fonts.module.css';
   margin-bottom: calc(var(--yr) * 2);
 
   & span {
@@ -47,7 +40,7 @@
 }
 
 .description {
-  line-height: calc(var(--yr) * 6);
+  composes: small from '../Fonts.module.css';
 
   @media (--s) {
     padding-right: calc(1 / 3 * 100%);

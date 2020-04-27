@@ -28,16 +28,7 @@
 
 .title {
   & h1 {
-    font-family: 'PT Serif', serif;
-    font-size: 2rem;
-    line-height: normal;
-    font-weight: normal;
     margin: 0 0 1rem;
-
-    @media (--s) {
-      font-size: calc(var(--yr) * 11.5);
-      line-height: calc(var(--yr) * 15);
-    }
   }
 
   @media (--m) {

@@ -10,7 +10,7 @@
   @media (--m) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 1.875rem;
+    grid-column-gap: calc(var(--yr) * 7.5);
   }
 }
 
@@ -47,11 +47,8 @@
 }
 
 .title {
+  composes: fn from '../Fonts.module.css';
   display: none;
   text-align: center;
   margin-bottom: calc(var(--yr) * 8);
-  font-family: 'PT Serif', serif;
-  font-weight: bold;
-  font-size: calc(var(--yr) * 5);
-  line-height: calc(var(--yr) * 6);
 }

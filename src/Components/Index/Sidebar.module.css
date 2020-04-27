@@ -53,25 +53,19 @@
 }
 
 .title {
-  font-family: 'PT Serif', serif;
-  font-size: 2rem;
-  line-height: normal;
-  font-weight: bold;
+  composes: h1 from '../Fonts.module.css';
   border-bottom: 1px solid #e5e5e6;
   margin-bottom: 0.75rem;
   padding-bottom: 0.75rem;
-  hyphens: auto;
 
   @media (--m) {
     hyphens: none;
-    font-size: 2.75rem;
-    line-height: 3rem;
     padding-bottom: 4.5rem;
   }
 }
 
 .desc {
-  composes: at from '../Fonts.module.css';
+  composes: h2 from '../Fonts.module.css';
   margin-bottom: 1rem;
 
   @media (--m) {
