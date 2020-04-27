@@ -24,171 +24,173 @@ export default function Residents () {
         Международные резиденты Нижегородской области
       </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Sw} alt="sw" />
+      <div className={styles.residents}>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Sw} alt="sw" />
+            </div>
+          </div>
+
+          <div className={styles.title}>
+            Volkswagen Group Rus
           </div>
         </div>
 
-        <div className={styles.title}>
-          Volkswagen Group Rus
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Solvay} alt="solvay" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Solvay} alt="solvay" />
+          <div className={styles.title}>
+            Solvay
           </div>
         </div>
 
-        <div className={styles.title}>
-          Solvay
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Leoni} alt="leoni" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Leoni} alt="leoni" />
+          <div className={styles.title}>
+            LLC Leoni Rus
           </div>
         </div>
 
-        <div className={styles.title}>
-          LLC Leoni Rus
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Unilin} alt="unilin" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Unilin} alt="unilin" />
+          <div className={styles.title}>
+            Unilin
           </div>
         </div>
 
-        <div className={styles.title}>
-          Unilin
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Wella} alt="wella" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Wella} alt="wella" />
+          <div className={styles.title}>
+            Wella
           </div>
         </div>
 
-        <div className={styles.title}>
-          Wella
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Magna} alt="magna" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Magna} alt="magna" />
+          <div className={styles.title}>
+            Magna Automotive rus
           </div>
         </div>
 
-        <div className={styles.title}>
-          Magna Automotive rus
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Bpr} alt="bpr" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Bpr} alt="bpr" />
+          <div className={styles.title}>
+            Boryszew Plastik Rus
           </div>
         </div>
 
-        <div className={styles.title}>
-          Boryszew Plastik Rus
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Danieli} alt="danieli" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Danieli} alt="danieli" />
+          <div className={styles.title}>
+            Danieli Volga
           </div>
         </div>
 
-        <div className={styles.title}>
-          Danieli Volga
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Liebherr} alt="liebherr" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Liebherr} alt="liebherr" />
+          <div className={styles.title}>
+            Liebherr
           </div>
         </div>
 
-        <div className={styles.title}>
-          Liebherr
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Ushin} alt="ushin" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Ushin} alt="ushin" />
+          <div className={styles.title}>
+            U-shin
           </div>
         </div>
 
-        <div className={styles.title}>
-          U-shin
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Jungheinrich} alt="jungheinrich" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Jungheinrich} alt="jungheinrich" />
+          <div className={styles.title}>
+            Jungheinrich
           </div>
         </div>
 
-        <div className={styles.title}>
-          Jungheinrich
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Heineken} alt="heineken" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Heineken} alt="heineken" />
+          <div className={styles.title}>
+            Heineken
           </div>
         </div>
 
-        <div className={styles.title}>
-          Heineken
-        </div>
-      </div>
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Daydo} alt="daydo" />
+            </div>
+          </div>
 
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Daydo} alt="daydo" />
+          <div className={styles.title}>
+            Daido Metal Rus
           </div>
         </div>
 
-        <div className={styles.title}>
-          Daido Metal Rus
-        </div>
-      </div>
-
-      <div className={styles.resident}>
-        <div className={styles.logo}>
-          <div className={styles.image}>
-            <img src={Freudenberg} alt="freudenberg" />
+        <div className={styles.resident}>
+          <div className={styles.logo}>
+            <div className={styles.image}>
+              <img src={Freudenberg} alt="freudenberg" />
+            </div>
           </div>
-        </div>
 
-        <div className={styles.title}>
-          Freudenberg Polytex
+          <div className={styles.title}>
+            Freudenberg Polytex
+          </div>
         </div>
       </div>
     </div>
