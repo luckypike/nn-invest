@@ -23,6 +23,10 @@
   font-size: calc(var(--yr) * 4.5);
   line-height: calc(var(--yr) * 6);
 
+  @media (--s) {
+    padding-right: calc(1 / 5 * 100%);
+  }
+
   & li {
     position: relative;
     padding-left: calc(var(--yr) * 10.5);

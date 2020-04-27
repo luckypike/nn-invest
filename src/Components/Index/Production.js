@@ -11,7 +11,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          99,3%
+          99,3<span>%</span>
         </div>
 
         <div className={styles.description}>
@@ -21,7 +21,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          58,6%
+          58,6<span>%</span>
         </div>
 
         <div className={styles.description}>
@@ -31,7 +31,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          37,3%
+          37,3<span>%</span>
         </div>
 
         <div className={styles.description}>
@@ -41,7 +41,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          33,8%
+          33,8<span>%</span>
         </div>
 
         <div className={styles.description}>
@@ -51,7 +51,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          33%
+          33<span>%</span>
         </div>
 
         <div className={styles.description}>
@@ -61,7 +61,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          44,2%
+          44,2<span>%</span>
         </div>
 
         <div className={styles.description}>
@@ -71,7 +71,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          46,8%
+          46,8<span>%</span>
         </div>
 
         <div className={styles.description}>
@@ -81,7 +81,7 @@ export default function Production () {
 
       <div className={styles.item}>
         <div className={styles.nums}>
-          16,7%
+          16,7<span>%</span>
         </div>
 
         <div className={styles.description}>
