@@ -1,20 +1,16 @@
 .root {
   display: block;
-
-
 }
 
 .residents {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--yr);
-  /* grid-row-gap: 24px; */
 
   @media (--m) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1.875rem;
-    grid-row-gap: 24px;
   }
 }
 
@@ -23,12 +19,13 @@
   margin-bottom: calc(var(--yr) * 12);
 }
 
-.resident {
-  /* border: 1px solid #DBDFE3; */
+.slider {
+  position: relative;
+  overflow: hidden;
 }
 
 .logo {
-  padding: 24px 0;
+  padding: calc(var(--yr) * 6) 0;
 }
 
 .image {
