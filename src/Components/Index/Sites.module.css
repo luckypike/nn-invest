@@ -27,6 +27,7 @@
 
 
 .more {
+  text-decoration: none;
   cursor: pointer;
   user-select: none;
   background-color: #F9F6F1;
@@ -43,4 +44,9 @@
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+.sites_link {
+  text-decoration: none;
+  color: #BCAA8E;
 }

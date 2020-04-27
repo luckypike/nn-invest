@@ -8,6 +8,12 @@ import Wella from './Icons/wella.png'
 import Magna from './Icons/magna.svg'
 import Bpr from './Icons/bpr.png'
 import Danieli from './Icons/danieli.svg'
+import Liebherr from './Icons/liebherr.svg'
+import Jungheinrich from './Icons/jungheinrich.svg'
+import Heineken from './Icons/heineken.svg'
+import Freudenberg from './Icons/freudenberg.svg'
+import Daydo from './Icons/daydo.jpg'
+import Ushin from './Icons/ushin.jpg'
 
 import styles from './Residents.module.css'
 
@@ -117,48 +123,72 @@ export default function Residents () {
       <div className={styles.resident}>
         <div className={styles.logo}>
           <div className={styles.image}>
-            <img src={Wella} alt="wella" />
+            <img src={Liebherr} alt="liebherr" />
           </div>
         </div>
 
         <div className={styles.title}>
-          Wella
+          Liebherr
         </div>
       </div>
 
       <div className={styles.resident}>
         <div className={styles.logo}>
           <div className={styles.image}>
-            <img src={Magna} alt="magna" />
+            <img src={Ushin} alt="ushin" />
           </div>
         </div>
 
         <div className={styles.title}>
-          Magna Automotive rus
+          U-shin
         </div>
       </div>
 
       <div className={styles.resident}>
         <div className={styles.logo}>
           <div className={styles.image}>
-            <img src={Bpr} alt="bpr" />
+            <img src={Jungheinrich} alt="jungheinrich" />
           </div>
         </div>
 
         <div className={styles.title}>
-          Boryszew Plastik Rus
+          Jungheinrich
         </div>
       </div>
 
       <div className={styles.resident}>
         <div className={styles.logo}>
           <div className={styles.image}>
-            <img src={Danieli} alt="danieli" />
+            <img src={Heineken} alt="heineken" />
           </div>
         </div>
 
         <div className={styles.title}>
-          Danieli Volga
+          Heineken
+        </div>
+      </div>
+
+      <div className={styles.resident}>
+        <div className={styles.logo}>
+          <div className={styles.image}>
+            <img src={Daydo} alt="daydo" />
+          </div>
+        </div>
+
+        <div className={styles.title}>
+          Daido Metal Rus
+        </div>
+      </div>
+
+      <div className={styles.resident}>
+        <div className={styles.logo}>
+          <div className={styles.image}>
+            <img src={Freudenberg} alt="freudenberg" />
+          </div>
+        </div>
+
+        <div className={styles.title}>
+          Freudenberg Polytex
         </div>
       </div>
     </div>

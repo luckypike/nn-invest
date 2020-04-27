@@ -12,6 +12,7 @@ import Position from './Index/Position'
 import Production from './Index/Production'
 import Potential from './Index/Potential'
 import Residents from './Index/Residents'
+import Business from './Index/Business'
 import News from './Index/News'
 
 import styles from './App.module.css'
@@ -119,7 +120,9 @@ export default function App () {
           </div>
         </div>
 
-        <div className={styles.section} />
+        <div>
+          <Business />
+        </div>
 
         <div className={styles.root}>
           <div className={styles.block}>
@@ -135,7 +138,9 @@ export default function App () {
           </div>
 
           <div className={styles.footer}>
-            <div className={styles.footer_button}>Оставить заявку</div>
+            <a href="https://nn-invest.com/" className={styles.footer_button}>
+              Оставить заявку
+            </a>
             <div className={styles.footer_link}>
               Инвестиционный портал Нижегородской области <a href="https://nn-invest.com/">nn-invest.com</a>
             </div>
