@@ -13,7 +13,7 @@
 
   @media (--s) {
     --s1: 2;
-    --s2: 4;
+    --s2: 3;
     --s3: 7;
     --s4: 11;
     --s5: 14;
@@ -41,6 +41,7 @@ body {
 
 p {
   margin: 0 0 0.5rem;
+  hyphens: auto;
 }
 
 p:last-child {

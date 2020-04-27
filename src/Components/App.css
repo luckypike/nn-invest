@@ -1,3 +1,7 @@
 .active {
   overflow: hidden;
 }
+
+strong {
+  font-weight: 700;
+}

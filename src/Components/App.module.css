@@ -50,14 +50,16 @@
   }
 }
 
-.text {
-  margin-bottom: calc(var(--yr) * 3);
+.main {
+  padding: calc(var(--yr) * var(--s2)) 0;
+  margin: calc(var(--yr) * var(--s3)) 0;
 
-  & p:not(:last-child) {
-    padding-bottom: calc(var(--yr) * 3);
-    margin-bottom: calc(var(--yr) * 3);
-    border-bottom: 1px solid #DBDFE3;
-  }
+  border-top: 1px solid #DBDFE3;
+  border-bottom: 1px solid #DBDFE3;
+}
+
+.text {
+  /* margin-bottom: calc(var(--yr) * 3); */
 
   @media(--m) {
     margin-bottom: 0;
