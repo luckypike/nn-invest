@@ -1,14 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Route, Link } from 'react-router-dom'
 
-import { Context } from '../Context'
 import Sidebar from './Sidebar'
 
 import styles from './Sites.module.css'
 
 export default function Sites () {
-  const { setOverlay } = useContext(Context)
-
   return (
     <div className={styles.root}>
       <div className={styles.title}>

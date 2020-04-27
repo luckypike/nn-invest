@@ -2,10 +2,17 @@
   display: block;
 
   @media (--m) {
+    padding-bottom: calc(var(--yr) * 12);
+  }
+}
+
+.position_items {
+  display: block;
+
+  @media (--m) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.5rem;
-    padding-bottom: calc(var(--yr) * 12);
+    grid-column-gap: 1.875rem;
   }
 }
 

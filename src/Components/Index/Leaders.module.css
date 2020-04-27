@@ -2,10 +2,17 @@
   display: block;
 
   @media (--m) {
+    /* grid-row-gap: calc(var(--yr) * 12); */
+  }
+}
+
+.leaders_container {
+  display: block;
+
+  @media (--m) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: calc(var(--xr) * 1.875);
-    grid-row-gap: calc(var(--yr) * 12);
   }
 }
 
@@ -13,7 +20,6 @@
   font-family: 'PT Serif', serif;
   font-size: calc(var(--yr) * 6);
   line-height: calc(var(--yr) * 8);
-  margin-bottom: calc(var(--yr) * 4);
 
   @media (--s) {
     font-size: calc(var(--yr) * 8.5);
@@ -23,6 +29,7 @@
   @media (--m) {
     grid-column: -1 / 1;
     width: calc(2 / 3 * 100%);
+    margin-bottom: calc(var(--yr) * 12);
   }
 }
 

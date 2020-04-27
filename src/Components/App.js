@@ -87,7 +87,6 @@ export default function App () {
             <Structure />
           </div> */}
 
-
           <div className={styles.leaders}>
             <Leaders />
           </div>

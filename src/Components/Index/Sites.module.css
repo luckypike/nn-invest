@@ -1,24 +1,24 @@
 .root {
   position: relative;
   display: block;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 
   @media (--m) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.875rem;
+    padding-bottom: calc(var(--yr) * 12);
   }
 }
 
 .title {
   composes: title from './Production.module.css';
-  margin-bottom: calc(var(--yr) * 12);
   grid-column: 1;
+  margin-bottom: 0;
 }
 
 .sites_container {
   grid-column: 2;
-  margin-bottom: calc(var(--yr) * 18);
 }
 
 .text {

@@ -9,23 +9,25 @@ export default function Potential () {
         Потенциал Нижегородской области
       </div>
 
-      <div>
-        <div className={styles.top}>
-          топ-5
+      <div className={styles.potential_container}>
+        <div>
+          <div className={styles.top}>
+            топ-5
+          </div>
+
+          <div className={styles.desc}>
+            по величине образовательного потенциала
+          </div>
         </div>
 
-        <div className={styles.desc}>
-          по величине образовательного потенциала
-        </div>
-      </div>
+        <div>
+          <div className={styles.top}>
+            топ-10
+          </div>
 
-      <div>
-        <div className={styles.top}>
-          топ-10
-        </div>
-
-        <div className={styles.desc}>
-          регионов с максимальным инвестиционным потенциалом (Агентство «Эксперт РА»)
+          <div className={styles.desc}>
+            регионов с максимальным инвестиционным потенциалом (Агентство «Эксперт РА»)
+          </div>
         </div>
       </div>
     </div>
