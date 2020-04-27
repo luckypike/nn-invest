@@ -83,6 +83,14 @@ export default function App () {
             <Interview />
           </div> */}
 
+          <div className={styles.structure}>
+            <Structure />
+          </div>
+
+          <div className={styles.residents}>
+            <Residents />
+          </div>
+
           <div className={styles.leaders}>
             <Leaders />
           </div>
@@ -107,14 +115,6 @@ export default function App () {
         </div>
 
         <div className={styles.root}>
-          <div className={styles.structure}>
-            <Structure />
-          </div>
-
-          <div className={styles.residents}>
-            <Residents />
-          </div>
-
           <div className={styles.business}>
             <div className={styles.title}>
               Бизнес на особых условиях

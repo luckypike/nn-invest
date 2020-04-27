@@ -37,6 +37,12 @@
   @media (--m) {
     grid-column: span 5;
   }
+
+  @media (--l) {
+    &::before {
+      padding-top: 100%;
+    }
+  }
 }
 
 .structure_container {
