@@ -73,7 +73,7 @@ export default function Residents () {
           </div>
         </div>
 
-        <div className={styles.resident}>
+        {/* <div className={styles.resident}>
           <div className={styles.logo}>
             <div className={styles.image}>
               <img src={Wella} alt="wella" />
@@ -191,7 +191,7 @@ export default function Residents () {
           <div className={styles.title}>
             Freudenberg Polytex
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

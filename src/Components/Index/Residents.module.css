@@ -24,7 +24,7 @@
 }
 
 .resident {
-  border: 1px solid #DBDFE3;
+  /* border: 1px solid #DBDFE3; */
 }
 
 .logo {
@@ -50,6 +50,7 @@
 }
 
 .title {
+  display: none;
   text-align: center;
   margin-bottom: calc(var(--yr) * 8);
   font-family: 'PT Serif', serif;

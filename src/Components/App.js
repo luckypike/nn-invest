@@ -83,16 +83,17 @@ export default function App () {
             <Interview />
           </div> */}
 
-          <div className={styles.structure}>
+          {/* <div className={styles.structure}>
             <Structure />
+          </div> */}
+
+
+          <div className={styles.leaders}>
+            <Leaders />
           </div>
 
           <div className={styles.residents}>
             <Residents />
-          </div>
-
-          <div className={styles.leaders}>
-            <Leaders />
           </div>
         </div>
 
