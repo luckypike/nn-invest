@@ -2,6 +2,8 @@ import React from 'react'
 
 import { YMaps, Map, Placemark } from 'react-yandex-maps'
 
+import Mark from './Icons/mark.png'
+
 import styles from './Business.module.css'
 
 export default function Business () {
@@ -11,25 +13,19 @@ export default function Business () {
         <div className={styles.placeholder} />
 
         <YMaps>
-          <Map className={styles.ymap} defaultState={{ center: [56.23863828307551,43.18698734516306], zoom: 12 }}>
+          <Map className={styles.ymap} defaultState={{ center: [56.2386, 43.1869], zoom: 12 }}>
             <Placemark
-              // defaultGeometry={}
-              options = {{
+              defaultGeometry={[56.2347, 43.2044]}
+              options={{
                 iconLayout: 'default#image',
-                // iconImageHref: Ballon,
-                iconImageSize: [45, 50],
-                iconImageOffset: [-20, -50]
+                iconImageHref: Mark,
+                iconImageSize: [396, 204],
+                iconImageOffset: [-120, -140]
               }}
             />
           </Map>
         </YMaps>
       </div>
     </div>
-  )
-}
-
-function Ballon () {
-  return(
-    <div></div>
   )
 }
