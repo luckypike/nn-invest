@@ -3,6 +3,8 @@ import { Route, Link } from 'react-router-dom'
 
 import Sidebar from './Sidebar'
 
+import Toser from './Images/toser.jpg'
+
 import styles from './Sites.module.css'
 
 export default function Sites () {
@@ -33,6 +35,7 @@ export default function Sites () {
         render={(props) =>
           <Sidebar
             {...props}
+            image={Toser}
             title={<ToserTitle />}
             desc={<ToserDesc />}
             text={<ToserText />}

@@ -33,7 +33,9 @@ export default function Sidebar ({ title, desc, text, image }) {
       </Link>
 
       <div className={styles.content}>
-        <div className={styles.image} style={{ backgroundImage: `url(${image})` }} />
+        {image &&
+          <div className={styles.image} style={{ backgroundImage: `url(${image})` }} />
+        }
 
         <div className={styles.group}>
           {title &&
