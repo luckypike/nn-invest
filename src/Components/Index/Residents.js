@@ -25,10 +25,11 @@ export default function Residents () {
 
   useEffect(() => {
     const glide = new Glide(mount.current, {
-      type: 'slider',
+      type: 'carousel',
       autoplay: 3000,
       hoverpause: true,
       perView: 4,
+      loop: true,
       gap: 0,
       breakpoints: {
         768: {
