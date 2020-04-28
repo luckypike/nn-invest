@@ -60,12 +60,6 @@ export default function Business () {
         window.location.href = '#/toser/1'
       })
 
-      myMap.events.add('boundschange', function (e) {
-        if (window.innerWidth < 424) {
-          myMap.setCenter([56.21912877418261, 43.1566856083934])
-        }
-      })
-
       myPlacemark.events.add('mouseenter', function (e) {
         var mark = document.getElementById('mark')
         mark.classList.add('mark-hover')
