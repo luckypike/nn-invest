@@ -5,7 +5,7 @@
 .potential_container {
   display: block;
 
-  @media (--m) {
+  @media (--s) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.875rem;
@@ -14,9 +14,18 @@
 
 .title {
   composes: title from './Production.module.css';
-  margin-bottom: calc(var(--yr) * 12);
 }
 
 .top {
   composes: nums from './Production.module.css';
+}
+
+.item {
+  &:not(:last-child) {
+    margin-bottom: calc(var(--yr) * 8);
+  }
+
+  @media (--m) {
+    margin-bottom: 0;
+  }
 }

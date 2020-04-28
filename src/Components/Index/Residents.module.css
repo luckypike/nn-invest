@@ -16,7 +16,11 @@
 
 .heading {
   composes: title from './Production.module.css';
-  margin-bottom: calc(var(--yr) * 12);
+  margin-bottom: calc(var(--yr) * 4);
+
+  @media (--m) {
+    margin-bottom: calc(var(--yr) * 12);
+  }
 }
 
 .slider {

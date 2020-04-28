@@ -31,10 +31,10 @@ export default function Residents () {
       perView: 4,
       gap: 0,
       breakpoints: {
-        1024: {
+        768: {
           perView: 3
         },
-        600: {
+        550: {
           perView: 1
         }
       }

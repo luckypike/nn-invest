@@ -1,8 +1,14 @@
 .news {
   display: block;
+  margin-bottom: calc(var(--yr) * 8);
+
+  @media (--s) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: calc(var(--yr) * 7.5);
+  }
 
   @media (--m) {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: calc(var(--yr) * 7.5);
     margin-bottom: calc(var(--yr) * 18);
@@ -11,7 +17,7 @@
 
 .title {
   composes: h2 from '../Fonts.module.css';
-  margin-bottom: 1rem;
+  margin-bottom: calc(var(--yr) * 8);
 
   @media (--m) {
     margin-bottom: calc(var(--yr) * 12);

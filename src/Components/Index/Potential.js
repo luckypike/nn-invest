@@ -10,7 +10,7 @@ export default function Potential () {
       </div>
 
       <div className={styles.potential_container}>
-        <div>
+        <div className={styles.item}>
           <div className={styles.top}>
             топ-5
           </div>
@@ -20,7 +20,7 @@ export default function Potential () {
           </div>
         </div>
 
-        <div>
+        <div className={styles.item}>
           <div className={styles.top}>
             топ-10
           </div>

@@ -14,7 +14,6 @@
 .title {
   composes: title from './Production.module.css';
   grid-column: 1;
-  margin-bottom: 0;
 }
 
 .sites_container {
@@ -22,7 +21,11 @@
 }
 
 .text {
-  margin-bottom: calc(var(--yr) * 12);
+  margin-bottom: calc(var(--yr) * 8);
+
+  @media (--m) {
+    margin-bottom: calc(var(--yr) * 12);
+  }
 }
 
 
