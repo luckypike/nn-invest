@@ -16,7 +16,7 @@ export default function Production () {
           </div>
 
           <div className={styles.description}>
-            автобусов полной массой не более 5 т
+            автобусов полной массой не более 5 т
           </div>
         </div>
 
@@ -26,7 +26,7 @@ export default function Production () {
           </div>
 
           <div className={styles.description}>
-            автобусов полной массой более 5 т
+            автобусов полной массой более 5 т
           </div>
         </div>
 
