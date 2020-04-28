@@ -116,7 +116,7 @@ export default function App () {
 
         <div className={styles.root}>
           <div className={styles.business}>
-            <div className={styles.title}>
+            <div className={styles.h2}>
               Бизнес на особых условиях
             </div>
           </div>

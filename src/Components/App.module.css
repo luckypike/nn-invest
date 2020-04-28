@@ -2,7 +2,7 @@
   padding: 0 1rem;
   max-width: 100rem;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 
   @media (--s) {
     padding: 0 2rem;
@@ -15,34 +15,31 @@
 
 .intro {
   display: block;
-  margin: 2rem 0;
+  margin: calc(var(--yr) * var(--s6)) 0;
 
   @media (--s) {
-    margin: 4.5rem 0;
   }
 
   @media (--m) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1.5rem;
-    margin-bottom: 4.5rem;
-    grid-row-gap: calc(var(--yr) * calc(var(--s2) * 3));
+    grid-row-gap: 0;
   }
 }
 
 .title {
-  & h1 {
-    margin: 0 0 1rem;
-  }
+  margin-bottom: calc(var(--yr) * var(--s5));
 
   @media (--m) {
     grid-column: -1 / 1;
     width: calc(2 / 3 * 100%);
-
-    & h1 {
-      margin: 0;
-    }
   }
+}
+
+.h2 {
+  composes: h2 from './Fonts.module.css';
+  margin-bottom: calc(var(--yr) * var(--s5));
 }
 
 .main {
@@ -62,34 +59,19 @@
 
 .leaders,
 .residents,
-.sites {
-  margin-bottom: calc(var(--yr) * 8);
-
-  @media (--m) {
-    margin-bottom: calc(var(--yr) * 18);
-  }
-}
-
+.sites,
 .production,
 .position,
 .structure {
-  margin-bottom: calc(var(--yr) * 8);
+  margin-bottom: calc(var(--yr) * var(--s6));
 
-  @media(--m) {
-    margin-bottom: calc(var(--yr) * 12);
-  }
 }
 
 .region {
-  padding: calc(var(--yr) * 8) 0;
-  margin-bottom: calc(var(--yr) * 8);
+  padding: calc(var(--yr) * var(--s6)) 0;
+  margin-bottom: calc(var(--yr) * var(--s6));
   background-color: #f9f6f1;
   z-index: -1;
-
-  @media (--m) {
-    padding: calc(var(--yr) * 18) 0;
-    margin-bottom: calc(var(--yr) * 18);
-  }
 }
 
 .region_container {
@@ -126,7 +108,7 @@
   color: #BCAA8E;
   font-size: calc(var(--yr) * 3);
   line-height: calc(var(--yr) * 4);
-  margin-bottom: calc(var(--yr) * 8);
+  margin-bottom: calc(var(--yr) * var(--s5));
   position: relative;
   overflow: hidden;
 
@@ -140,25 +122,21 @@
     transform: translateY(-50%);
     margin-left: 16px;
   }
-
-  @media (--m) {
-    margin-bottom: calc(var(--yr) * 12);
-  }
 }
 
 .news {
   border-bottom: 1px solid #C4C4C4;
+  padding-bottom: calc(var(--yr) * var(--s6));
 }
 
 .footer {
   display: block;
-  padding: calc(var(--yr) * 8) 0;
+  padding: calc(var(--yr) * var(--s6)) 0;
 
   @media (--m) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1.875rem;
-    padding: calc(var(--yr) * 18) 0;
   }
 }
 

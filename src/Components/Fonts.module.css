@@ -5,6 +5,7 @@ h1 {
   line-height: calc(var(--yr) * 9);
   font-weight: normal;
   color: #141414;
+  margin: 0;
 
   @media (--m) {
     font-size: calc(var(--yr) * 11.5);
