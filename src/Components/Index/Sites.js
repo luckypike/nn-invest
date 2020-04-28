@@ -113,34 +113,71 @@ function ToserText () {
       <p>
         Резиденты получают доступ к широкому спектру специальных программ по финансированию и субсидированию инвестиционных проектов. Средства предоставляют федеральные Фонд развития моногородов, Фонд развития промышленности, «МСП Банк» и областной Фонд развития промышленности и венчурных инвестиций. Кроме того, административные процедуры по получению земельных участков и присоединению к сетям максимально упрощены, и для резидентов ТОСЭР действует особый налоговый режим.
       </p>
-
-      <p>
-        Земельные участки - без проведения торгов
-      </p>
-      <p>
-        Нет налогов на землю и имущество 10 лет
-      </p>
-      <p>
-        Ставка по налогу на прибыль:
-      </p>
       <p>
         - первые пять лет 5%
       </p>
       <p>
         - следующие пять лет – 13%
       </p>
-      <p>
-        Размер страховых взносов - 7,6%:
-      </p>
-      <p>
-        пенсионное страхование - 6%
-      </p>
-      <p>
-        социальное – 1,5%
-      </p>
-      <p>
-        медицинское – 0,1%
-      </p>
+
+      <div className={styles.site}>
+        <div className={styles.site_item}>
+          <h3>Земельные участки - без проведения торгов</h3>
+        </div>
+        <div className={styles.site_item}>
+          <h3>Нет налогов на землю и имущество 10 лет</h3>
+        </div>
+      </div>
+
+      <div className={styles.tax}>
+        <div className={styles.tax_title}>
+          <h3>Ставка по налогу на прибыль:</h3>
+        </div>
+
+        <div className={styles.tax_items}>
+          <div className={styles.tax_item}>
+            <div className={styles.nums}>
+              5<span>%</span>
+              <div className={styles.description}>первые пять лет</div>
+            </div>
+          </div>
+
+          <div className={styles.tax_item}>
+            <div className={styles.nums}>
+              13<span>%</span>
+              <div className={styles.description}>следующие пять лет</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.insurance}>
+        <div className={styles.insurance_title}>
+          <div className={styles.nums}>
+            7,6
+            <span>%</span>
+          </div>
+
+          <h3>Размеры страховых взносов</h3>
+        </div>
+
+        <div className={styles.insurance_container}>
+          <div className={styles.nums}>
+            6<span>%</span>
+            <div className={styles.description}>пенсионное страхование</div>
+          </div>
+
+          <div className={styles.nums}>
+            1,5<span>%</span>
+            <div className={styles.description}>социальное страхование</div>
+          </div>
+
+          <div className={styles.nums}>
+            0,1<span>%</span>
+            <div className={styles.description}>медицинское страхование</div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
