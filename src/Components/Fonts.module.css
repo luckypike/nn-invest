@@ -1,8 +1,8 @@
 .h1,
 h1 {
   font-family: var(--pt_serif);
-  font-size: calc(var(--yr) * 8.5);
-  line-height: calc(var(--yr) * 12);
+  font-size: calc(var(--yr) * 7);
+  line-height: calc(var(--yr) * 9);
   font-weight: normal;
   color: #141414;
 
@@ -69,6 +69,11 @@ h3 {
 }
 
 .numbers {
-  font-size: calc(var(--yr) * 14);
-  line-height: calc(var(--yr) * 15);
+  font-size: calc(var(--yr) * 10);
+  line-height: calc(var(--yr) * 10);
+
+  @media (--m) {
+    font-size: calc(var(--yr) * 14);
+    line-height: calc(var(--yr) * 15);
+  }
 }

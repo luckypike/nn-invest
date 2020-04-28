@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: calc(var(--yr) * 4);
-  grid-row-gap: calc(var(--yr) * 4);
+  grid-row-gap: calc(var(--yr) * 8);
 
   @media (--s) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -21,7 +21,7 @@
   @media (--m) {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: calc(var(--yr) * 7.5);
-    grid-row-gap: calc(var(--yr) * 8);
+
   }
 }
 
