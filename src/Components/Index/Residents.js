@@ -52,7 +52,7 @@ export default function Residents () {
   return (
     <div className={styles.root}>
       <div className={styles.heading}>
-        Международные резиденты Нижегородской области
+        Более 50 международных компаний — резиденты Нижегородской области
       </div>
 
       <div className={styles.slider}>
