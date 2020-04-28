@@ -6,7 +6,7 @@ export default function Position () {
   return (
     <div className={styles.root}>
       <div className={styles.title}>
-        Позиции Нижегородской области в рейтинге регионов России
+        Позиции Нижегородской области в рейтингах
       </div>
 
       <div className={styles.position_items}>
