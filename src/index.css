@@ -42,12 +42,12 @@ body {
 }
 
 p {
-  margin: 0 0 0.5rem;
+  margin: 0;
   hyphens: auto;
-}
 
-p:last-child {
-  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: calc(var(--yr) * var(--s3));
+  }
 }
 
 ul {
