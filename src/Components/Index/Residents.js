@@ -9,7 +9,7 @@ import Leoni from './Icons/leoni.svg'
 import Unilin from './Icons/unilin.png'
 import Wella from './Icons/wella.png'
 import Magna from './Icons/magna.svg'
-import Bpr from './Icons/bpr.png'
+import Bpr from './Icons/bpr.svg'
 import Danieli from './Icons/danieli.svg'
 import Liebherr from './Icons/liebherr.svg'
 import Jungheinrich from './Icons/jungheinrich.svg'
@@ -17,6 +17,11 @@ import Heineken from './Icons/heineken.svg'
 import Freudenberg from './Icons/freudenberg.svg'
 import Daydo from './Icons/daydo.jpg'
 import Ushin from './Icons/ushin.jpg'
+import Intel from './Icons/intel.svg'
+import Stada from './Icons/stada.svg'
+import Yazaki from './Icons/yazaki.svg'
+import Shlemmer from './Icons/shlemmer.svg'
+import Raymond from './Icons/raymond.svg'
 
 import styles from './Residents.module.css'
 
@@ -246,6 +251,76 @@ export default function Residents () {
 
                   <div className={styles.title}>
                     Freudenberg Polytex
+                  </div>
+                </div>
+              </div>
+
+              <div className={classNames('glide__slide')}>
+                <div className={styles.resident}>
+                  <div className={styles.logo}>
+                    <div className={styles.image}>
+                      <img src={Intel} alt="intel" />
+                    </div>
+                  </div>
+
+                  <div className={styles.title}>
+                     Intel
+                  </div>
+                </div>
+              </div>
+
+              <div className={classNames('glide__slide')}>
+                <div className={styles.resident}>
+                  <div className={styles.logo}>
+                    <div className={styles.image}>
+                      <img src={Stada} alt="stada" />
+                    </div>
+                  </div>
+
+                  <div className={styles.title}>
+                     Stada
+                  </div>
+                </div>
+              </div>
+
+              <div className={classNames('glide__slide')}>
+                <div className={styles.resident}>
+                  <div className={styles.logo}>
+                    <div className={styles.image}>
+                      <img src={Yazaki} alt="yazaki" />
+                    </div>
+                  </div>
+
+                  <div className={styles.title}>
+                     Yazaki
+                  </div>
+                </div>
+              </div>
+
+              <div className={classNames('glide__slide')}>
+                <div className={styles.resident}>
+                  <div className={styles.logo}>
+                    <div className={styles.image}>
+                      <img src={Shlemmer} alt="shlemmer" />
+                    </div>
+                  </div>
+
+                  <div className={styles.title}>
+                     Shlemmer
+                  </div>
+                </div>
+              </div>
+
+              <div className={classNames('glide__slide')}>
+                <div className={styles.resident}>
+                  <div className={styles.logo}>
+                    <div className={styles.image}>
+                      <img src={Raymond} alt="raymond" />
+                    </div>
+                  </div>
+
+                  <div className={styles.title}>
+                     Raymond
                   </div>
                 </div>
               </div>
