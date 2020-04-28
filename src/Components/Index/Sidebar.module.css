@@ -65,7 +65,8 @@
 }
 
 .desc {
-  composes: h2 from '../Fonts.module.css';
+  font-family: var(--pt_serif);
+  font-weight: 700;
   margin-bottom: 1rem;
 
   @media (--m) {
