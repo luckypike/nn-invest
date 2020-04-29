@@ -18,7 +18,7 @@ export default function Sites () {
         <div className={styles.left}>
           <div className={styles.pl}>
             <strong>
-              Инженерная инфраструктура р.п. Решетиха:
+              Инженерная инфраструктура Решетихи:
             </strong>
 
             <ul>
@@ -46,7 +46,7 @@ export default function Sites () {
 
           <div className={styles.pl}>
             <strong>
-              Инженерная инфраструктура г. Володарск:
+              Инженерная инфраструктура Володарска:
             </strong>
 
             <ul>
@@ -78,7 +78,7 @@ export default function Sites () {
             Отсутствие налогов на землю и имущество, снижение ставки по налогу на прибыль и размера страховых взносов, кредиты на льготных условиях и готовая коммунальная инфраструктура. Такие условия работы ожидают участников территорий опережающего социального экономического развития (ТОСЭР) в Володарске и Решетихе. За последний год резидентами ТОСЭР стали четыре компании. Для привлечения новых инвесторов региональные власти добились расширения перечня отраслей, представители которых могут работать на особых условиях.
           </div>
 
-          <Link to="/toser/1" className={styles.sites_link}>
+          <Link to="/toser" className={styles.sites_link}>
             <div className={styles.more}>
               Подробнее о площадках
 
@@ -91,7 +91,7 @@ export default function Sites () {
       </div>
 
       <Route
-        path='/toser/1'
+        path='/toser'
         render={(props) =>
           <Sidebar
             {...props}

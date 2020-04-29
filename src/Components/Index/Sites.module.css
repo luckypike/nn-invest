@@ -9,8 +9,6 @@
 }
 
 .text {
-  margin-bottom: calc(var(--yr) * var(--s5));
-
   @media (--m) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -147,16 +145,21 @@
   grid-column: 2;
   font-size: calc(var(--yr) * 3.5);
   line-height: calc(var(--yr) * 5);
-  margin-bottom: calc(var(--yr) * var(--s6));
 }
 
 .pl {
+  margin-bottom: calc(var(--yr) * var(--s5));
+
   & li:not(:last-child) {
     margin-bottom: calc(var(--yr) * var(--s1));
   }
 
-  &:first-child {
-    margin-bottom: calc(var(--yr) * var(--s5));
+  @media (--m) {
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-bottom: calc(var(--yr) * var(--s5));
+    }
   }
 }
 

@@ -58,7 +58,7 @@ export default function Ymap () {
         .add(Volodarsk)
 
       myMap.geoObjects.events.add('click', function (e) {
-        window.location.href = '#/toser/1'
+        window.location.href = '#/toser'
       })
 
       myMap.events.add('boundschange', function (e) {
