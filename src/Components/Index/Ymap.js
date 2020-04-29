@@ -15,7 +15,8 @@ export default function Ymap () {
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
         center: [56.2386, 43.1869],
-        zoom: 11
+        zoom: 10,
+        controls: []
       }, {
         searchControlProvider: 'yandex#search'
       })
@@ -58,6 +59,14 @@ export default function Ymap () {
 
       myMap.geoObjects.events.add('click', function (e) {
         window.location.href = '#/toser/1'
+      })
+
+      myMap.events.add('boundschange', function (e) {
+        if (window.innerWidth < 426) {
+          myMap.setZoom(8)
+        } else {
+          myMap.setZoom(10)
+        }
       })
 
       Volodarsk.events.add('mouseenter', function (e) {
