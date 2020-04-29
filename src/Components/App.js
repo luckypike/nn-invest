@@ -141,7 +141,7 @@ export default function App () {
               Оставить заявку
             </a>
             <div className={styles.footer_link}>
-              Инвестиционный портал Нижегородской области <a href="https://nn-invest.com/">nn-invest.com</a>
+              Инвестиционный портал Нижегородской области <a href="https://nn-invest.com/">nn&#8209;invest.com</a>
             </div>
             <div className={styles.footer_phone}>
               <p>Горячая линия поддержки инвесторов</p>
