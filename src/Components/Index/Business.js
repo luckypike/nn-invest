@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 
-import Mark from './Icons/mark.png'
-import Mark2 from './Icons/mark2.png'
-import Mark3 from './Icons/mark_right_white.png'
-import Mark4 from './Icons/mark_left_white.png'
+import LeftMarkWhite from './Icons/left_mark_white.png'
+import LeftMark from './Icons/left_mark.png'
+import RightMarkWhite from './Icons/right_mark_white.png'
+import RightMark from './Icons/right_mark.png'
 
 import styles from './Business.module.css'
 import './bs.css'
@@ -15,80 +15,80 @@ export default function Business () {
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
         center: [56.2386, 43.1869],
-        zoom: 10
+        zoom: 11
       }, {
         searchControlProvider: 'yandex#search'
       })
 
-      const MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div id="mark" class="mark" style="color: #000000; font-weight: bold; font-family: PT Serif; font-size: 20px; line-height: 24px; width: 340px; padding-top: 6px;">$[properties.iconContent]</div>'
+      const VolodarskContent = ymaps.templateLayoutFactory.createClass(
+        '<div id="volodarsk" style="color: #000; font-weight: bold; font-family: PT Serif; font-size: 16px; line-height: 24px; width: 200px">$[properties.iconContent]</div>'
       )
 
-      const MyIconContentLayout2 = ymaps.templateLayoutFactory.createClass(
-        '<div id="mark2" class="mark" style="color: #000000; font-weight: bold; font-family: PT Serif; font-size: 20px; line-height: 24px; width: 340px; padding-top: 6px;">$[properties.iconContent]</div>'
+      const ReshetihaContent = ymaps.templateLayoutFactory.createClass(
+        '<div id="reshetiha" style="color: #000; font-weight: bold; font-family: PT Serif; font-size: 16px; line-height: 24px; width: 200px">$[properties.iconContent]</div>'
       )
 
-      const myPlacemarkWithContent = new ymaps.Placemark([56.213928920379715,43.201810725567974], {
-        iconContent: 'Территория опережающего социально-экономического развития «Володарск»'
+      const Volodarsk = new ymaps.Placemark([56.2191, 43.1584], {
+        iconContent: 'ТОСЭР «Володарск»'
       }, {
         iconLayout: 'default#imageWithContent',
-        iconImageHref: Mark4,
-        iconImageSize: [400, 200],
-        iconImageOffset: [-400, -200],
-        iconContentOffset: [10, 15],
-        iconContentLayout: MyIconContentLayout2
+        iconImageHref: RightMarkWhite,
+        iconImageSize: [200, 100],
+        iconImageOffset: [-200, -100],
+        iconContentOffset: [-10, 18],
+        iconContentLayout: VolodarskContent
       })
 
-      const myPlacemark = new ymaps.Placemark([56.213674834061024,43.25187868490581], {
-        iconContent: 'Территория опережающего социально-экономического развития «Решетиха»'
+      const Reshetiha = new ymaps.Placemark([56.2224, 43.2909], {
+        iconContent: 'ТОСЭР «Решетиха»'
       }, {
         iconLayout: 'default#imageWithContent',
-        iconImageHref: Mark3,
-        iconImageSize: [400, 200],
-        iconImageOffset: [0, -200],
-        iconContentOffset: [45, 15],
-        iconContentLayout: MyIconContentLayout
+        iconImageHref: LeftMarkWhite,
+        iconImageSize: [200, 100],
+        iconImageOffset: [0, -100],
+        iconContentOffset: [10, 18],
+        iconContentLayout: ReshetihaContent
       })
 
       myMap.behaviors.disable('scrollZoom')
 
       myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent)
+        .add(Reshetiha)
+        .add(Volodarsk)
 
       myMap.geoObjects.events.add('click', function (e) {
         window.location.href = '#/toser/1'
       })
 
-      myPlacemark.events.add('mouseenter', function (e) {
-        var mark = document.getElementById('mark')
-        mark.classList.add('mark-hover')
-        myPlacemark.options.set({
-          iconImageHref: Mark2
+      Volodarsk.events.add('mouseenter', function (e) {
+        var volodarsk = document.getElementById('volodarsk')
+        volodarsk.classList.add('mark-hover')
+        Volodarsk.options.set({
+          iconImageHref: RightMark
         })
       })
 
-      myPlacemark.events.add('mouseleave', function (e) {
-        var mark = document.getElementById('mark')
+      Volodarsk.events.add('mouseleave', function (e) {
+        var mark = document.getElementById('volodarsk')
         mark.classList.remove('mark-hover')
-        myPlacemark.options.set({
-          iconImageHref: Mark3
+        Volodarsk.options.set({
+          iconImageHref: RightMarkWhite
         })
       })
 
-      myPlacemarkWithContent.events.add('mouseenter', function (e) {
-        var mark = document.getElementById('mark2')
-        mark.classList.add('mark-hover')
-        myPlacemarkWithContent.options.set({
-          iconImageHref: Mark
+      Reshetiha.events.add('mouseenter', function (e) {
+        var reshetiha = document.getElementById('reshetiha')
+        reshetiha.classList.add('mark-hover')
+        Reshetiha.options.set({
+          iconImageHref: LeftMark
         })
       })
 
-      myPlacemarkWithContent.events.add('mouseleave', function (e) {
-        var mark = document.getElementById('mark2')
-        mark.classList.remove('mark-hover')
-        myPlacemarkWithContent.options.set({
-          iconImageHref: Mark4
+      Reshetiha.events.add('mouseleave', function (e) {
+        var reshetiha = document.getElementById('reshetiha')
+        reshetiha.classList.remove('mark-hover')
+        Reshetiha.options.set({
+          iconImageHref: LeftMarkWhite
         })
       })
     })
