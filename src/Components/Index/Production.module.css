@@ -27,12 +27,10 @@
 
 .title {
   composes: h3 from '../Fonts.module.css';
-  margin-bottom: calc(var(--yr) * 8);
+  margin-bottom: calc(var(--yr) * var(--s5));
 
   @media (--m) {
-    grid-column: -1 / 1;
     width: calc(2 / 3 * 100%);
-    margin-bottom: calc(var(--yr) * 12);
   }
 }
 
