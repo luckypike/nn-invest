@@ -2,7 +2,6 @@
   padding: 0 1rem;
   max-width: 100rem;
   margin: 0 auto;
-  /* margin-bottom: 2rem; */
 
   @media (--s) {
     padding: 0 2rem;
@@ -14,8 +13,11 @@
 }
 
 .intro {
-  display: block;
   margin: calc(var(--yr) * var(--s6)) 0;
+}
+
+.intro_container {
+  display: block;
 
   & div {
     &:not(:last-child) {
@@ -41,7 +43,6 @@
   margin-bottom: calc(var(--yr) * var(--s5)) !important;
 
   @media (--m) {
-    grid-column: -1 / 1;
     width: calc(2 / 3 * 100%);
   }
 }
@@ -70,10 +71,8 @@
 .residents,
 .sites,
 .production,
-.position,
-.structure {
+.position {
   margin-bottom: calc(var(--yr) * var(--s6));
-
 }
 
 .region {

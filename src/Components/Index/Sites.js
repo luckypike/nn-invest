@@ -202,8 +202,7 @@ function ToserText () {
       <div className={styles.insurance}>
         <div className={styles.insurance_title}>
           <div className={styles.nums}>
-            7,6
-            <span>%</span>
+            7,6<span>%</span>
           </div>
 
           <h3>Размеры страховых взносов</h3>

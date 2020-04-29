@@ -5,10 +5,10 @@ import LeftMark from './Icons/left_mark.png'
 import RightMarkWhite from './Icons/right_mark_white.png'
 import RightMark from './Icons/right_mark.png'
 
-import styles from './Business.module.css'
-import './bs.css'
+import styles from './Ymap.module.css'
+import './Ymap.css'
 
-export default function Business () {
+export default function Ymap () {
   useEffect(() => {
     const { ymaps } = window
 
