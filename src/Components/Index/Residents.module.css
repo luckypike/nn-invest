@@ -28,6 +28,10 @@
   overflow: hidden;
 }
 
+.resident {
+  cursor: pointer;
+}
+
 .logo {
   /* padding: calc(var(--yr) * 6) 0; */
 }
