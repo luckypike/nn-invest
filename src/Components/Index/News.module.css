@@ -10,6 +10,7 @@
   @media (--m) {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: calc(var(--yr) * 7.5);
+    grid-row-gap: calc(var(--yr) * var(--s6));
   }
 }
 
