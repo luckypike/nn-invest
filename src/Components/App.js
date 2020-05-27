@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Context } from './Context'
 
 import Header from './Header'
-// import Interview from './Index/Interview'
+import Interview from './Index/Interview'
 import Leaders from './Index/Leaders'
 import Sites from './Index/Sites'
 import Position from './Index/Position'
@@ -80,10 +80,6 @@ export default function App () {
             </div>
           </div>
 
-          {/* <div className={styles.interview}>
-            <Interview />
-          </div> */}
-
           <div className={styles.leaders}>
             <Leaders />
           </div>
@@ -130,6 +126,10 @@ export default function App () {
 
           <div className={styles.sites}>
             <Sites />
+          </div>
+
+          <div className={styles.interview}>
+            <Interview />
           </div>
 
           <div className={styles.news}>

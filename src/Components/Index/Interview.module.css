@@ -12,7 +12,7 @@
 .image {
   position: relative;
   background-color: #666;
-  background-position: center;
+  background-position: center 60%;
   background-size: cover;
   margin-bottom: 0.5rem;
 
@@ -23,6 +23,7 @@
   }
 
   @media (--m) {
+    margin-bottom: 0;
     grid-column: span 8;
   }
 }
@@ -60,21 +61,17 @@
 }
 
 .full {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-  text-decoration: none;
-  color: #000;
+  composes: sites_link from './Sites.module.css';
+  width: auto;
 
   @media (--m) {
-    grid-column: 2 / span 2;
+    grid-column: 2;
   }
 }
 
 .more {
-  text-transform: uppercase;
-  composes: h3 from '../Fonts.module.css';
+  color: #F9F6F1;
+  composes: more from './Sites.module.css';
 }
 
 .arrow {
@@ -93,10 +90,6 @@
     height: 0.75rem;
     width: 0.625rem;
   }
-}
-
-.container {
-  margin-bottom: 1rem;
 }
 
 .interview {

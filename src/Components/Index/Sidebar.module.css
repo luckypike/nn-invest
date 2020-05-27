@@ -42,7 +42,7 @@
 .image {
   position: relative;
   background-color: #666;
-  background-position: center 80%;
+  background-position: center 60%;
   background-size: cover;
 
   &::before {
