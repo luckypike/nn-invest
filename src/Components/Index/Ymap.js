@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 
-import LeftMarkWhite from './Icons/left_mark_white.png'
-import LeftMark from './Icons/left_mark.png'
+// import LeftMarkWhite from './Icons/left_mark_white.png'
+// import LeftMark from './Icons/left_mark.png'
 import RightMarkWhite from './Icons/right_mark_white.png'
 import RightMark from './Icons/right_mark.png'
+import LeftMarkWhiteBottom from './Icons/left_mark_white_bottom.png'
+import LeftMarkBottom from './Icons/left_mark_bottom.png'
 
 import styles from './Ymap.module.css'
 import './Ymap.css'
@@ -27,6 +29,9 @@ export default function Ymap () {
       const ReshetihaContent = ymaps.templateLayoutFactory.createClass(
         '<div id="reshetiha" style="color: #000; font-weight: bold; font-family: PT Serif; font-size: 16px; line-height: 24px; width: 200px">$[properties.iconContent]</div>'
       )
+      const KylibinContent = ymaps.templateLayoutFactory.createClass(
+        '<div id="kylibin" style="color: #000; font-weight: bold; font-family: PT Serif; font-size: 16px; line-height: 24px; width: 200px">$[properties.iconContent]</div>'
+      )
 
       const Volodarsk = new ymaps.Placemark([56.2191, 43.1584], {
         iconContent: 'ТОСЭР «Володарск»'
@@ -43,11 +48,22 @@ export default function Ymap () {
         iconContent: 'ТОСЭР «Решетиха»'
       }, {
         iconLayout: 'default#imageWithContent',
-        iconImageHref: LeftMarkWhite,
+        iconImageHref: LeftMarkWhiteBottom,
         iconImageSize: [200, 100],
-        iconImageOffset: [0, -100],
-        iconContentOffset: [10, 18],
+        iconImageOffset: [-190, -20],
+        iconContentOffset: [-5, 60],
         iconContentLayout: ReshetihaContent
+      })
+
+      const Kylibin = new ymaps.Placemark([56.2853, 43.6051], {
+        iconContent: 'ОЭЗ «Кулибин»'
+      }, {
+        iconLayout: 'default#imageWithContent',
+        iconImageHref: RightMarkWhite,
+        iconImageSize: [200, 100],
+        iconImageOffset: [-180, -90],
+        iconContentOffset: [-5, 18],
+        iconContentLayout: KylibinContent
       })
 
       myMap.behaviors.disable('scrollZoom')
@@ -55,20 +71,29 @@ export default function Ymap () {
       myMap.geoObjects
         .add(Reshetiha)
         .add(Volodarsk)
+        .add(Kylibin)
 
-      myMap.geoObjects.events.add('click', function (e) {
+      Volodarsk.events.add('click', function (e) {
         window.location.href = '#/toser'
       })
 
-      myMap.events.add('boundschange', function (e) {
-        if (window.innerWidth < 426) {
-          myMap.setZoom(8)
-          myMap.controls.remove('zoomControl')
-        } else {
-          myMap.setZoom(10)
-          myMap.controls.add('zoomControl')
-        }
+      Reshetiha.events.add('click', function (e) {
+        window.location.href = '#/toser'
       })
+
+      Kylibin.events.add('click', function (e) {
+        window.location.href = '#/news/5'
+      })
+
+      // myMap.events.add('boundschange', function (e) {
+      //   if (window.innerWidth < 426) {
+      //     myMap.setZoom(8)
+      //     myMap.controls.remove('zoomControl')
+      //   } else {
+      //     myMap.setZoom(10)
+      //     myMap.controls.add('zoomControl')
+      //   }
+      // })
 
       Volodarsk.events.add('mouseenter', function (e) {
         var volodarsk = document.getElementById('volodarsk')
@@ -90,7 +115,7 @@ export default function Ymap () {
         var reshetiha = document.getElementById('reshetiha')
         reshetiha.classList.add('mark-hover')
         Reshetiha.options.set({
-          iconImageHref: LeftMark
+          iconImageHref: LeftMarkBottom
         })
       })
 
@@ -98,7 +123,23 @@ export default function Ymap () {
         var reshetiha = document.getElementById('reshetiha')
         reshetiha.classList.remove('mark-hover')
         Reshetiha.options.set({
-          iconImageHref: LeftMarkWhite
+          iconImageHref: LeftMarkWhiteBottom
+        })
+      })
+
+      Kylibin.events.add('mouseenter', function (e) {
+        var kylibin = document.getElementById('kylibin')
+        kylibin.classList.add('mark-hover')
+        Kylibin.options.set({
+          iconImageHref: RightMark
+        })
+      })
+
+      Kylibin.events.add('mouseleave', function (e) {
+        var kylibin = document.getElementById('kylibin')
+        kylibin.classList.remove('mark-hover')
+        Kylibin.options.set({
+          iconImageHref: RightMarkWhite
         })
       })
     })
