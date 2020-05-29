@@ -14,6 +14,9 @@ import Residents from './Index/Residents'
 import Ymap from './Index/Ymap'
 import News from './Index/News'
 
+import Facebook from './Index/Icons/facebook.svg'
+import Instagram from './Index/Icons/instagram.svg'
+
 import styles from './App.module.css'
 import './App.css'
 
@@ -140,12 +143,28 @@ export default function App () {
             <a href="https://nn-invest.com/" className={styles.footer_button}>
               Оставить заявку
             </a>
-            <div className={styles.footer_link}>
-              Инвестиционный портал Нижегородской области <a href="https://nn-invest.com/">nn&#8209;invest.com</a>
+
+            <div className={styles.footer_info}>
+              <p>
+                Инвестиционный портал Нижегородской области <a href="https://nn-invest.com/" style={{ color: '#29709C' }}>nn&#8209;invest.com</a>
+              </p>
+
+              <p>
+                Горячая линия поддержки инвесторов <br />
+                <a href="tel:8-800-350-12-52">
+                  8-800-350-12-52
+                </a>
+              </p>
             </div>
-            <div className={styles.footer_phone}>
-              <p>Горячая линия поддержки инвесторов</p>
-              <p><a href="tel:8-800-350-12-52">8-800-350-12-52</a></p>
+
+            <div className={styles.logos}>
+              <a href="https://www.facebook.com/nndevelopcorp/" className={styles.logo}>
+                <img src={Facebook} alt="facebook" />
+              </a>
+
+              <a href="https://www.instagram.com/nnov_invest/" className={styles.logo}>
+                <img src={Instagram} alt="instagram" />
+              </a>
             </div>
           </div>
         </div>

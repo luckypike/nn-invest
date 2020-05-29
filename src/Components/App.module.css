@@ -156,32 +156,18 @@
   color: #BCAA8E;
   display: block;
   margin-bottom: calc(var(--yr) * 4);
+  height: fit-content;
 
   @media (--m) {
     margin-bottom: 0;
   }
 }
 
-.footer_link {
-  margin-bottom: calc(var(--yr) * 4);
+.footer_info {
+  margin-bottom: calc(var(--yr) * var(--s3));
 
   @media (--m) {
     margin-bottom: 0;
-  }
-
-  & a {
-    color: #29709C;
-  }
-}
-
-.footer_phone {
-  & p {
-    margin: 0;
-  }
-
-  & a {
-    text-decoration: none;
-    color: #141414;
   }
 }
 
@@ -205,5 +191,19 @@
       opacity: 1;
       visibility: visible;
     }
+  }
+}
+
+.logos {
+  display: flex;
+}
+
+.logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  &:first-child {
+    margin-right: calc(var(--yr) * var(--s3));
   }
 }
