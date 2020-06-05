@@ -22,7 +22,7 @@ export default function Interview () {
 
       <div className={styles.interview}>
         <div className={styles.with}>
-          Интервью с генеральным директором Ильей Илюшиным
+          Интервью с генеральным директором ТК “Нефтепроминвест” Ильей Илюшиным
         </div>
 
         <div className={styles.text}>

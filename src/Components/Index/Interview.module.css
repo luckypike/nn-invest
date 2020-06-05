@@ -63,9 +63,12 @@
 
 .full {
   composes: sites_link from './Sites.module.css';
-  width: auto;
 
   @media (--m) {
+    grid-column: 2 / span 2;
+  }
+
+  @media (--xxl) {
     grid-column: 2;
   }
 }
