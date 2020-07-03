@@ -279,6 +279,16 @@ function InterviewText () {
         подготовке заявки на присоединение площадей будущего индустриального парка к действующей
         территории ОЭЗ «Кулибин».
       </p>
+
+      <p>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/nndevelopcorp/">https://www.facebook.com/nndevelopcorp/</a>
+        <br />
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nnov_invest/">https://www.instagram.com/nnov_invest/</a>
+        <br />
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sezkulibin/">https://www.facebook.com/sezkulibin/</a>
+        <br />
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sezkulibin/">https://www.instagram.com/sezkulibin/</a>
+      </p>
     </div>
   )
 }

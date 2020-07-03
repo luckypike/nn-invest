@@ -104,3 +104,7 @@
     grid-row-gap: 2rem;
   }
 }
+
+a {
+  color: rgb(41, 112, 156);
+}
