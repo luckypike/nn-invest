@@ -5,6 +5,7 @@ import { Context } from './Context'
 
 import Header from './Header'
 import Interview from './Index/Interview'
+import Interview2 from './Index/Interview2'
 import Leaders from './Index/Leaders'
 import Sites from './Index/Sites'
 import Position from './Index/Position'
@@ -129,6 +130,10 @@ export default function App () {
 
           <div className={styles.sites}>
             <Sites />
+          </div>
+
+          <div className={styles.interview}>
+            <Interview2 />
           </div>
 
           <div className={styles.interview}>
