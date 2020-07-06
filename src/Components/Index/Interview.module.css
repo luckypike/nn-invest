@@ -105,6 +105,16 @@
   }
 }
 
-a {
-  color: rgb(41, 112, 156);
+.logos {
+  display: flex;
+}
+
+.logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  &:not(:last-child) {
+    margin-right: calc(var(--yr) * var(--s3));
+  }
 }

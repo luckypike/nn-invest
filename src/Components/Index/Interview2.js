@@ -3,6 +3,9 @@ import { Route, Link } from 'react-router-dom'
 import { Context } from '../Context'
 
 import Photo from './Images/Nikitin.jpg'
+import Facebook from './Icons/facebook.svg'
+import Instagram from './Icons/instagram.svg'
+
 import Sidebar from './Sidebar'
 
 import styles from './Interview.module.css'
@@ -280,15 +283,20 @@ function InterviewText () {
         территории ОЭЗ «Кулибин».
       </p>
 
-      <p>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/nndevelopcorp/">https://www.facebook.com/nndevelopcorp/</a>
-        <br />
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nnov_invest/">https://www.instagram.com/nnov_invest/</a>
-        <br />
-        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sezkulibin/">https://www.facebook.com/sezkulibin/</a>
-        <br />
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sezkulibin/">https://www.instagram.com/sezkulibin/</a>
-      </p>
+      <div className={styles.logos}>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/nndevelopcorp/" className={styles.logo}>
+          <img src={Facebook} alt="facebook" />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nnov_invest/" className={styles.logo}>
+          <img src={Instagram} alt="instagram" />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sezkulibin/" className={styles.logo}>
+          <img src={Facebook} alt="facebook" />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sezkulibin/" className={styles.logo}>
+          <img src={Instagram} alt="instagram" />
+        </a>
+      </div>
     </div>
   )
 }
