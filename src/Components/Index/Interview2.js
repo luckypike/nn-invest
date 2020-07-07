@@ -284,12 +284,6 @@ function InterviewText () {
       </p>
 
       <div className={styles.logos}>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/nndevelopcorp/" className={styles.logo}>
-          <img src={Facebook} alt="facebook" />
-        </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nnov_invest/" className={styles.logo}>
-          <img src={Instagram} alt="instagram" />
-        </a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sezkulibin/" className={styles.logo}>
           <img src={Facebook} alt="facebook" />
         </a>
