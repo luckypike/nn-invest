@@ -59,6 +59,16 @@
   border-bottom: 1px solid #DBDFE3;
 }
 
+.interviews {
+  display: block;
+
+  @media (--m) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: calc(var(--xr) * 2);
+  }
+}
+
 .interview {
   margin-bottom: 2rem;
 

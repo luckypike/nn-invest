@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import classNames from 'classnames'
 import { Route, Link } from 'react-router-dom'
 import { Context } from '../Context'
 
@@ -8,56 +9,22 @@ import Instagram from './Icons/instagram.svg'
 
 import Sidebar from './Sidebar'
 
-import styles from './Interview.module.css'
+import styles from './InterviewSec.module.css'
 
 export default function Interview2 () {
   const { setOverlay } = useContext(Context)
 
   return (
     <div className={styles.root}>
-      <div className={styles.photo}>
-        <div className={styles.image} style={{ backgroundImage: `url(${Photo})` }} />
-
-        <div className={styles.desc}>
-          Глеб Никитин губернатор Нижегородской области
+      <Link to="/interview/2" onClick={() => setOverlay(true)}>
+        <div className={styles.photo}>
+          <div className={classNames(styles.image, styles.nikitin)} style={{ backgroundImage: `url(${Photo})` }} />
         </div>
-      </div>
 
-      <div className={styles.interview}>
         <div className={styles.with}>
           Интервью с губернатором Нижегородской области Глебом Никитиным
         </div>
-
-        <div className={styles.text}>
-          <p className={styles.q}>
-            В конце мая премьер-министр РФ Михаил Мишустин подписал распоряжение о создании в
-            Дзержинске особой экономической зоны (ОЭЗ) «Кулибин». Почему была выбрана именно эта
-            площадка, сколько времени ушло на ее создание, с какими сложностями пришлось
-            столкнуться? Во сколько обошелся региону процесс создания ОЭЗ и была ли оказана
-            поддержка из федерального бюджета?
-          </p>
-
-          <p className={styles.a}>
-            Поиск оптимальной площадки – длительный процесс, в который входит работа с экспертами
-            и бизнес-сообществом. Нашей задачей было определить место, где инвесторам будет максимально
-            комфортно. В результате выбрали промзону Дзержинска. На данный момент площадь
-            ОЭЗ – более 72 га. Работа по подготовке заявки началась в январе 2019 года, а в
-            октябре 2019 года заявка была направлена на рассмотрение в Минэкономразвития РФ.
-            Учитывая аналогичный опыт других регионов и достаточно высокие требования со стороны
-            федеральных органов власти к созданию таких преференциальных зон, это довольно сжатые сроки.
-          </p>
-        </div>
-
-        <Link to="/interview/2" className={styles.full} onClick={() => setOverlay(true)}>
-          <div className={styles.more}>
-            Читать полное интервью
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 9">
-              <path fill="#F9F6F1" d="M11.88 4.416L8.056 0.592L6.776 1.872L7.736 2.832L8.44 3.44L8.424 3.504L7.144 3.44H0.52V5.392H7.144L8.424 5.328L8.44 5.392L7.736 6L6.776 6.96L8.056 8.24L11.88 4.416Z"/>
-            </svg>
-          </div>
-        </Link>
-      </div>
+      </Link>
 
       <Route
         path='/interview/2'

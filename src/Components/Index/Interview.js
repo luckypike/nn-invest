@@ -5,57 +5,22 @@ import { Context } from '../Context'
 import Photo from './Images/Ilushin.jpg'
 import Sidebar from './Sidebar'
 
-import styles from './Interview.module.css'
+import styles from './InterviewSec.module.css'
 
 export default function Interview () {
   const { setOverlay } = useContext(Context)
 
   return (
     <div className={styles.root}>
-      <div className={styles.photo}>
-        <div className={styles.image} style={{ backgroundImage: `url(${Photo})` }} />
-
-        <div className={styles.desc}>
-          Илья Илюшин генеральный директор «ТК “Нефтепроминвест”»
+      <Link to="/interview/1" onClick={() => setOverlay(true)}>
+        <div className={styles.photo}>
+          <div className={styles.image} style={{ backgroundImage: `url(${Photo})` }} />
         </div>
-      </div>
 
-      <div className={styles.interview}>
         <div className={styles.with}>
           Интервью с генеральным директором ТК “Нефтепроминвест” Ильей Илюшиным
         </div>
-
-        <div className={styles.text}>
-          <p className={styles.q}>
-            Илья Сергеевич, ваша компания собирается реализовать в Нижнем Новгороде
-            инвестиционный проект по производству химических соединений, используемых в
-            микроэлектронике. Что именно планируется производить?
-          </p>
-
-          <p className={styles.a}>
-            Одно из основных направлений деятельности нашей компании — производство
-            высокочистых химических веществ для микроэлектроники. Эти химические соединения
-            являются сложными продуктами высокой и сверхвысокой чистоты. Они в основном
-            применяются при нанесении тонких нанопленок с использованием технологий CVD
-            (химическое осаждение из газовой фазы) и ALD (атомно-слоевое осаждение) и могут быть
-            использованы на всех современных крупных производствах полупроводников,
-            процессоров, чипов, которые встречаются почти во всех современных электронных
-            устройствах. Это малотоннажная продукция, и партии по 5-10 кг уже считаются
-            полупромышленным объемом. При этом она дорогостоящая: цена за 1 кг может
-            начинаться от $400 и доходить до $50 тыс.
-          </p>
-        </div>
-
-        <Link to="/interview/1" className={styles.full} onClick={() => setOverlay(true)}>
-          <div className={styles.more}>
-            Читать полное интервью
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 9">
-              <path fill="#F9F6F1" d="M11.88 4.416L8.056 0.592L6.776 1.872L7.736 2.832L8.44 3.44L8.424 3.504L7.144 3.44H0.52V5.392H7.144L8.424 5.328L8.44 5.392L7.736 6L6.776 6.96L8.056 8.24L11.88 4.416Z"/>
-            </svg>
-          </div>
-        </Link>
-      </div>
+      </Link>
 
       <Route
         path='/interview/1'
