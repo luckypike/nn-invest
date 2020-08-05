@@ -11,16 +11,14 @@ export default function Interview () {
   const { setOverlay } = useContext(Context)
 
   return (
-    <div className={styles.root}>
-      <Link to="/interview/1" onClick={() => setOverlay(true)}>
-        <div className={styles.photo}>
-          <div className={styles.image} style={{ backgroundImage: `url(${Photo})` }} />
-        </div>
+    <Link to="/interview/1" onClick={() => setOverlay(true)}>
+      <div className={styles.photo}>
+        <div className={styles.image} style={{ backgroundImage: `url(${Photo})` }} />
+      </div>
 
-        <div className={styles.with}>
-          Интервью с генеральным директором ТК “Нефтепроминвест” Ильей Илюшиным
-        </div>
-      </Link>
+      <div className={styles.with}>
+        Интервью с генеральным директором ТК “Нефтепроминвест” Ильей Илюшиным
+      </div>
 
       <Route
         path='/interview/1'
@@ -34,7 +32,7 @@ export default function Interview () {
           />
         }
       />
-    </div>
+    </Link>
   )
 }
 

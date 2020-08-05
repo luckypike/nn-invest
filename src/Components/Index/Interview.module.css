@@ -4,7 +4,7 @@
   @media (--m) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 1.5rem;
+    grid-column-gap: calc(var(--yr) * var(--s3));
     margin-bottom: 3rem;
   }
 }
@@ -40,6 +40,10 @@
 .with {
   composes: h1 from '../Fonts.module.css';
   margin-bottom: 1rem;
+
+  @media (--m) {
+    margin-bottom: 0;
+  }
 }
 
 .q {
@@ -50,6 +54,10 @@
 
 .a {
   margin-bottom: 1.5rem;
+
+  /* @media (--m) {
+    margin-bottom: 0;
+  } */
 }
 
 .text {
@@ -57,24 +65,19 @@
 
   @media (--m) {
     margin-bottom: 0;
-    grid-column: span 2;
   }
 }
 
 .full {
   composes: sites_link from './Sites.module.css';
-
+/* 
   @media (--m) {
-    grid-column: 2 / span 2;
-  }
-
-  @media (--xxl) {
     grid-column: 2;
-  }
+  } */
 }
 
 .more {
-  color: #F9F6F1;
+  color: #f9f6f1;
   composes: more from './Sites.module.css';
 }
 
@@ -99,9 +102,9 @@
 .interview {
   @media (--m) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: calc(var(--yr) * var(--s3));
+    grid-row-gap: calc(var(--yr) * var(--s4));
   }
 }
 

@@ -133,16 +133,16 @@ export default function App () {
             <Sites />
           </div>
 
-          <div className={styles.interview}>
+          <div className={styles.interview_main}>
             <Interview3 />
           </div>
 
           <div className={styles.interviews}>
-            <div className={styles.interview}>
+            <div className={styles.interview_sec}>
               <Interview2 />
             </div>
 
-            <div className={styles.interview}>
+            <div className={styles.interview_sec}>
               <Interview />
             </div>
           </div>

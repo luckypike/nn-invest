@@ -65,15 +65,24 @@
   @media (--m) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: calc(var(--xr) * 2);
+    grid-column-gap: calc(var(--yr) * var(--s3));
+    margin-bottom: calc(var(--yr) * var(--s6));
   }
 }
 
-.interview {
+.interview_main {
   margin-bottom: 2rem;
 
   @media (--m) {
     margin-bottom: 4.5rem;
+  }
+}
+
+.interview_sec {
+  margin-bottom: 2rem;
+
+  @media (--m) {
+    margin-bottom: 0;
   }
 }
 

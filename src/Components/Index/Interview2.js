@@ -15,16 +15,14 @@ export default function Interview2 () {
   const { setOverlay } = useContext(Context)
 
   return (
-    <div className={styles.root}>
-      <Link to="/interview/2" onClick={() => setOverlay(true)}>
-        <div className={styles.photo}>
-          <div className={classNames(styles.image, styles.nikitin)} style={{ backgroundImage: `url(${Photo})` }} />
-        </div>
+    <Link to="/interview/2" onClick={() => setOverlay(true)}>
+      <div className={styles.photo}>
+        <div className={classNames(styles.image, styles.nikitin)} style={{ backgroundImage: `url(${Photo})` }} />
+      </div>
 
-        <div className={styles.with}>
-          Интервью с губернатором Нижегородской области Глебом Никитиным
-        </div>
-      </Link>
+      <div className={styles.with}>
+        Интервью с губернатором Нижегородской области Глебом Никитиным
+      </div>
 
       <Route
         path='/interview/2'
@@ -38,7 +36,7 @@ export default function Interview2 () {
           />
         }
       />
-    </div>
+    </Link>
   )
 }
 

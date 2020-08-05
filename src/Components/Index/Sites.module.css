@@ -5,7 +5,7 @@
   @media (--m) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: calc(var(--yr) * 7.5);
+    grid-column-gap: calc(var(--yr) * var(--s3));
   }
 }
 
