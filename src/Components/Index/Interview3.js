@@ -6,49 +6,19 @@ import Photo from './Images/Rost.jpg'
 
 import Sidebar from './Sidebar'
 
-import styles from './Interview.module.css'
+import styles from './InterviewSec.module.css'
 
 export default function Interview3 () {
   const { setOverlay } = useContext(Context)
 
   return (
-    <div className={styles.root}>
+    <Link to="/interview/3" onClick={() => setOverlay(true)}>
       <div className={styles.photo}>
         <div className={styles.image} style={{ backgroundImage: `url(${Photo})` }} />
-
-        <div className={styles.desc}>
-          Директор по маркетингу группы компаний «Рост» Наталья Федосеева.
-        </div>
       </div>
 
-      <div className={styles.interview}>
-        <div className={styles.with}>
-          Интервью с компанией «Рост»
-        </div>
-
-        <div className={styles.text}>
-          <p className={styles.q}>
-            Наталья Владимировна, компания «Рост» реализует в Нижегородской области
-            проект по созданию крупного тепличного комплекса для круглогодичного
-            выращивания овощей. На каком этапе в настоящий момент находится проект?
-            Когда должен состояться его запуск?
-          </p>
-
-          <p className={styles.a}>
-            Проект находится на стадии строительства, которое мы планируем завершить до конца
-            этого года.
-          </p>
-
-          <Link to="/interview/3" className={styles.full} onClick={() => setOverlay(true)}>
-            <div className={styles.more}>
-              Читать полное интервью
-
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 9">
-                <path fill="#F9F6F1" d="M11.88 4.416L8.056 0.592L6.776 1.872L7.736 2.832L8.44 3.44L8.424 3.504L7.144 3.44H0.52V5.392H7.144L8.424 5.328L8.44 5.392L7.736 6L6.776 6.96L8.056 8.24L11.88 4.416Z"/>
-              </svg>
-            </div>
-          </Link>
-        </div>
+      <div className={styles.with}>
+        Интервью с компанией «Рост»
       </div>
 
       <Route
@@ -63,7 +33,7 @@ export default function Interview3 () {
           />
         }
       />
-    </div>
+    </Link>
   )
 }
 

@@ -64,7 +64,7 @@
 
   @media (--m) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: calc(var(--yr) * var(--s3));
     margin-bottom: calc(var(--yr) * var(--s6));
   }
