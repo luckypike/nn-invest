@@ -10,6 +10,7 @@ import Interview3 from './Index/Interview3'
 import Interview4 from './Index/Interview4'
 import Leaders from './Index/Leaders'
 import Sites from './Index/Sites'
+import Sites2 from './Index/Sites2'
 import Position from './Index/Position'
 import Production from './Index/Production'
 import Potential from './Index/Potential'
@@ -128,6 +129,10 @@ export default function App () {
         <div className={styles.root}>
           <div className={styles.block}>
             01
+          </div>
+
+          <div className={styles.sites}>
+            <Sites2 />
           </div>
 
           <div className={styles.sites}>
