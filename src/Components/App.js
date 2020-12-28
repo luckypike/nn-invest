@@ -8,6 +8,7 @@ import Interview from './Index/Interview'
 import Interview2 from './Index/Interview2'
 import Interview3 from './Index/Interview3'
 import Interview4 from './Index/Interview4'
+import Interview5 from './Index/Interview5'
 import Leaders from './Index/Leaders'
 import Sites from './Index/Sites'
 import Sites2 from './Index/Sites2'
@@ -140,10 +141,14 @@ export default function App () {
           </div>
 
           <div className={styles.interview_main}>
-            <Interview4 />
+            <Interview5 />
           </div>
 
           <div className={styles.interviews}>
+            <div className={styles.interview_sec}>
+              <Interview4 />
+            </div>
+            
             <div className={styles.interview_sec}>
               <Interview3 />
             </div>
