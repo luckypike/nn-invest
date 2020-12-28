@@ -347,7 +347,7 @@ function InvestportalText () {
     <div>
       <p>
         На инвестиционном портале Нижегородской области
-        &nbsp;<a target="_blank" href="https://www.nn-invest.ru/">www.nn-invest.ru</a> обновлен
+        &nbsp;<a target="_blank" rel="noopener noreferrer" href="https://www.nn-invest.ru/">www.nn-invest.ru</a> обновлен
         функционал личного кабинета инвестора и инвестиционная карта региона.
       </p>
 
@@ -368,7 +368,7 @@ function InvestportalText () {
 
       <p>
         В рамках модернизации инвестиционной карты Нижегородской
-        области <a target="_blank" href="https://newmap.nn-invest.ru/">https://newmap.nn-invest.ru/</a>
+        области <a target="_blank" rel="noopener noreferrer" href="https://newmap.nn-invest.ru/">https://newmap.nn-invest.ru/</a>
         также была внедрена новая система поиска фильтрации по типу участка, площади, муниципальному
         образованию, удаленности от областного центра и форме собственности. Сейчас инвестиционная
         карта представляет собой единую базу «зеленых» и «коричневых» инвестиционных площадок,

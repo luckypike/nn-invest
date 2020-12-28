@@ -48,15 +48,15 @@
 }
 
 .h2 {
-  composes: h2 from './Fonts.module.css';
+  composes: h2 from "./Fonts.module.css";
   margin-bottom: calc(var(--yr) * var(--s5));
 }
 
 .main {
   padding: calc(var(--yr) * var(--s2)) 0;
   margin: calc(var(--yr) * var(--s3)) 0;
-  border-top: 1px solid #DBDFE3;
-  border-bottom: 1px solid #DBDFE3;
+  border-top: 1px solid #dbdfe3;
+  border-bottom: 1px solid #dbdfe3;
 }
 
 .interviews {
@@ -65,7 +65,7 @@
   @media (--m) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: calc(var(--yr) * var(--s3));
+    grid-gap: calc(var(--yr) * var(--s3));
     margin-bottom: calc(var(--yr) * var(--s6));
   }
 }
@@ -103,7 +103,7 @@
 
 .region_container {
   padding: 0 1rem;
-  background: url('./Index/Images/deer.png') no-repeat;
+  background: url("./Index/Images/deer.png") no-repeat;
   background-size: contain;
   background-position: right;
   z-index: -2;
@@ -121,7 +121,7 @@
   margin-bottom: calc(var(--yr) * 8);
 
   & .title {
-    font-family: 'PT Serif', serif;
+    font-family: "PT Serif", serif;
     font-size: calc(var(--yr) * 8.5);
     line-height: calc(var(--yr) * 12);
   }
@@ -132,7 +132,7 @@
 }
 
 .block {
-  color: #BCAA8E;
+  color: #bcaa8e;
   font-size: calc(var(--yr) * 3);
   line-height: calc(var(--yr) * 4);
   margin-bottom: calc(var(--yr) * var(--s5));
@@ -140,7 +140,7 @@
   overflow: hidden;
 
   &::after {
-    background: #BCAA8E;
+    background: #bcaa8e;
     content: "";
     height: 1px;
     position: absolute;
@@ -152,7 +152,7 @@
 }
 
 .news {
-  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
   padding-bottom: calc(var(--yr) * var(--s6));
 }
 
@@ -168,11 +168,11 @@
 }
 
 .footer_button {
-  background-color: #F9F6F1;
+  background-color: #f9f6f1;
   padding: calc(var(--yr) * 5.5) calc(var(--yr) * 16);
   width: fit-content;
   text-decoration: none;
-  color: #BCAA8E;
+  color: #bcaa8e;
   display: block;
   margin-bottom: calc(var(--yr) * 4);
   height: fit-content;
